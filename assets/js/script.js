@@ -1,0 +1,137 @@
+/* =====================================
+   LOADING SCREEN
+===================================== */
+
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+        if(loader){
+            loader.classList.add("loader-hide");
+        }
+    }, 1000);
+});
+
+
+/* =====================================
+   MOBILE MENU
+===================================== */
+
+function toggleMenu() {
+
+    const mobileMenu =
+        document.getElementById("mobileMenu");
+
+    if(mobileMenu){
+        mobileMenu.classList.toggle("active");
+    }
+
+}
+
+
+/* =====================================
+   STICKY HEADER
+===================================== */
+
+window.addEventListener("scroll", () => {
+
+    const header =
+        document.querySelector("header");
+
+    if(!header) return;
+
+    if(window.scrollY > 50){
+        header.classList.add("scrolled");
+    }else{
+        header.classList.remove("scrolled");
+    }
+
+});
+
+
+/* =====================================
+   SCROLL REVEAL
+===================================== */
+
+const revealElements =
+document.querySelectorAll(
+'.fade-up, .fade-left, .fade-right'
+);
+
+const revealOnScroll = () => {
+
+    revealElements.forEach((el) => {
+
+        const windowHeight =
+            window.innerHeight;
+
+        const top =
+            el.getBoundingClientRect().top;
+
+        if(top < windowHeight - 100){
+
+            el.classList.add("show");
+
+        }
+
+    });
+
+};
+
+window.addEventListener(
+    "scroll",
+    revealOnScroll
+);
+
+revealOnScroll();
+
+
+/* =====================================
+   BACK TO TOP
+===================================== */
+
+const backTop =
+document.getElementById("backTop");
+
+window.addEventListener("scroll", () => {
+
+    if(!backTop) return;
+
+    if(window.scrollY > 300){
+
+        backTop.classList.add("show");
+
+    }else{
+
+        backTop.classList.remove("show");
+
+    }
+
+});
+
+function scrollTopPage(){
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+
+/* =====================================
+   FLOATING WHATSAPP
+===================================== */
+
+function toggleWA(){
+
+    const waList =
+        document.getElementById("waList");
+
+    if(waList){
+
+        waList.classList.toggle("active");
+
+    }
+
+}
