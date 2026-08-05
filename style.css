@@ -1,0 +1,343 @@
+/* =====================================
+   PONDOK PESANTREN AL IHSAN ISLAMIC CENTER
+   PREMIUM ISLAMIC MODERN V1.0
+===================================== */
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8faf8;
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* =====================================
+   COLOR SYSTEM
+===================================== */
+
+:root{
+    --primary:#1f6b4f;
+    --primary-dark:#164d39;
+    --secondary:#d4af37;
+    --white:#ffffff;
+    --light:#f8faf8;
+    --dark:#1a1a1a;
+    --gray:#6b7280;
+
+    --radius:20px;
+
+    --shadow-sm:0 5px 15px rgba(0,0,0,.08);
+    --shadow-md:0 10px 25px rgba(0,0,0,.12);
+    --shadow-lg:0 15px 40px rgba(0,0,0,.15);
+
+    --transition:.3s ease;
+}
+
+/* =====================================
+   GLOBAL
+===================================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section{
+    padding:80px 0;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.hidden{
+    display:none;
+}
+
+/* =====================================
+   LOADING SCREEN
+===================================== */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#ffffff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    transition:.5s;
+}
+
+#loader img{
+    width:100px;
+    margin-bottom:20px;
+}
+
+#loader h2{
+    color:var(--primary);
+    font-size:1.2rem;
+    text-align:center;
+}
+
+.loader-hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    transition:.3s;
+}
+
+header.scrolled{
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
+    box-shadow:var(--shadow-sm);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 5%;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-area img{
+    width:50px;
+    height:50px;
+    object-fit:contain;
+}
+
+.logo-text{
+    font-weight:700;
+    color:white;
+    font-size:.95rem;
+}
+
+header.scrolled .logo-text{
+    color:var(--primary);
+}
+
+/* =====================================
+   DESKTOP MENU
+===================================== */
+
+.nav-menu{
+    display:flex;
+    gap:25px;
+}
+
+.nav-menu a{
+    color:white;
+    font-weight:500;
+    transition:var(--transition);
+}
+
+header.scrolled .nav-menu a{
+    color:var(--dark);
+}
+
+.nav-menu a:hover{
+    color:var(--secondary);
+}
+
+/* =====================================
+   MOBILE MENU
+===================================== */
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+
+header.scrolled .menu-toggle{
+    color:var(--primary);
+}
+
+.mobile-menu{
+    position:fixed;
+    top:0;
+    left:-300px;
+    width:280px;
+    height:100vh;
+    background:white;
+    box-shadow:var(--shadow-lg);
+    z-index:9999;
+    padding:30px;
+    transition:.4s;
+}
+
+.mobile-menu.active{
+    left:0;
+}
+
+.mobile-menu a{
+    display:block;
+    padding:14px 0;
+    color:var(--primary);
+    font-weight:600;
+    border-bottom:1px solid #eee;
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero{
+    height:70vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    width:90%;
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:clamp(2rem,5vw,4rem);
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1rem;
+    line-height:1.8;
+}
+
+/* =====================================
+   BUTTON AREA
+===================================== */
+
+.hero-buttons{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.hero-buttons img{
+    max-width:180px;
+    transition:.3s;
+}
+
+.hero-buttons img:hover{
+    transform:translateY(-5px) scale(1.03);
+}
+
+/* =====================================
+   JELAJAHI WEBSITE
+===================================== */
+
+.explore{
+    margin-top:-60px;
+    position:relative;
+    z-index:5;
+}
+
+.explore-card{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:25px;
+    box-shadow:var(--shadow-md);
+}
+
+.explore-title{
+    text-align:center;
+    color:var(--primary);
+    margin-bottom:20px;
+    font-size:1.3rem;
+    font-weight:700;
+}
+
+.explore-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:15px;
+}
+
+.explore-grid img{
+    width:100%;
+    transition:.3s;
+}
+
+.explore-grid img:hover{
+    transform:translateY(-5px) scale(1.05);
+}
+
+/* =====================================
+   CONTENT SECTION
+===================================== */
+
+.content-placeholder{
+    padding:100px 0;
+}
+
+.content-box{
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:var(--shadow-sm);
+}
+
+.content-box h2{
+    color:var(--primary);
+    margin-bottom:15px;
+}
