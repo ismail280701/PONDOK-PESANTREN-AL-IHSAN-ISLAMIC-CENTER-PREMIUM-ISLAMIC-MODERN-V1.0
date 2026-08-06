@@ -668,15 +668,6 @@ transition:0.3s;
 .hero-buttons img:hover{
 transform:translateY(-5px);
 }
-.explore-grid img{
-    transition:.4s ease;
-}
-
-.explore-grid img:hover{
-    transform:translateY(-8px) scale(1.05);
-    filter:brightness(1.05);
-}
-
     .explore-grid{
         grid-template-columns:repeat(2,1fr);
     }
