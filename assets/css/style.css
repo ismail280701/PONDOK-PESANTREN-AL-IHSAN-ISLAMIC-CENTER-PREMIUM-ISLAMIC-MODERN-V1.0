@@ -502,6 +502,20 @@ transform:translateY(-3px);
    ANIMATION
 ===================================== */
 
+.hero{
+    animation:heroZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom{
+    from{
+        background-size:100%;
+    }
+
+    to{
+        background-size:110%;
+    }
+}
+
 .fade-up{
     opacity:0;
     transform:translateY(40px);
