@@ -233,6 +233,7 @@ header.scrolled .menu-toggle{
     text-align:center;
     color:white;
     overflow:hidden;
+   animation:heroZoom 20s ease-in-out infinite;
 }
 
 .hero::before{
@@ -536,6 +537,25 @@ transform:translateY(-3px);
 .fade-right.show{
     opacity:1;
     transform:translateX(0);
+}
+
+@keyframes heroZoom{
+
+0%{
+background-size:100%;
+background-position:center center;
+}
+
+50%{
+background-size:108%;
+background-position:center top;
+}
+
+100%{
+background-size:100%;
+background-position:center center;
+}
+
 }
 
 /* =====================================
