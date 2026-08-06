@@ -634,3 +634,70 @@ box-shadow:0 10px 25px rgba(0,0,0,.1);
 .gallery-grid img:hover{
 transform:scale(1.05);
 }
+
+/* HEADER PREMIUM V2 */
+
+.hero{
+min-height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:clamp(3rem,6vw,5rem);
+line-height:1.1;
+margin-bottom:20px;
+font-weight:800;
+}
+
+.hero-content p{
+font-size:1.3rem;
+max-width:800px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.hero-buttons img{
+max-width:280px;
+transition:0.3s;
+}
+
+.hero-buttons img:hover{
+transform:translateY(-6px) scale(1.03);
+}
+
+.nav-logo img{
+height:80px;
+width:auto;
+}
+
+.quick-links{
+padding:50px 20px;
+}
+
+.quick-links .button-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+align-items:center;
+justify-items:center;
+}
+
+.quick-links img{
+max-width:220px;
+transition:0.3s;
+}
+
+.quick-links img:hover{
+transform:translateY(-5px);
+}
