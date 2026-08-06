@@ -19,7 +19,12 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#f8faf8;
+   background:
+    linear-gradient(
+    180deg,
+    #eef8f2 0%,
+    #ffffff 100%
+    );
     color:#222;
     overflow-x:hidden;
 }
@@ -133,8 +138,8 @@ header{
 }
 
 header.scrolled{
-    background:rgba(255,255,255,.95);
-    backdrop-filter:blur(10px);
+    background:rgba(20,77,57,.95);
+    backdrop-filter:blur(12px);
     box-shadow:var(--shadow-sm);
 }
 
@@ -237,7 +242,8 @@ header.scrolled .menu-toggle{
 ===================================== */
 
 .hero{
-    min-height:100vh;
+    min-height:100dvh;
+   padding-top:90px;
     height:auto;
     position:relative;
     display:flex;
@@ -247,7 +253,15 @@ header.scrolled .menu-toggle{
     color:white;
     overflow:hidden;
    animation:heroZoom 20s ease-in-out infinite;
+   overflow:hidden;
 }
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:inherit;
+    animation:zoomHero 20s ease-in-out infinite alternate;
 
 .hero::before{
     content:"";
@@ -326,9 +340,9 @@ transform:translateY(-3px);
 ===================================== */
 
 .explore{
-    margin-top:-60px;
+    margin-top:-120px;
     position:relative;
-    z-index:5;
+    z-index:10;
 }
 
     .explore-card{
@@ -336,19 +350,19 @@ background:
 linear-gradient(
 135deg,
 rgba(31,107,79,.08),
-rgba(212,175,55,.08)
+rgba(255,255,255,.92)
 );
 
-    backdrop-filter:blur(15px);
+    backdrop-filter:blur(20px);
 
 border:1px solid rgba(31,107,79,.15);
 
-    border-radius:25px;
+    border-radius:30px;
 
     padding:25px;
 
     box-shadow:
-    0 15px 35px rgba(0,0,0,.10);
+    0 25px 50px rgba(0,0,0,.15);
        
    overflow:hidden;
 position:relative;
@@ -603,6 +617,14 @@ background-size:100%;
 }
 
 }
+@keyframes zoomHero{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.08);
+    }
+}
 
 /* =====================================
    HOVER EFFECT PREMIUM
@@ -648,7 +670,9 @@ font-size:.85rem;
 }
 
 .hero{
-height:70vh;
+    min-height:100dvh;
+    padding-top:90px;
+   overflow:hidden;
 }
 
 .hero h1{
@@ -674,8 +698,8 @@ width:100%;
 }
 
 .hero-buttons img{
-width:120px;
-height:auto;
+width:45vw;
+max-width:170px;
 }
 
 }
@@ -694,8 +718,10 @@ height:auto;
     }
 
     .hero{
-        min-height:100vh;
-    }
+    min-height:100dvh;
+    padding-top:90px;
+   overflow:hidden;
+}
 
     .hero h1{
         font-size:2rem;
@@ -721,10 +747,12 @@ align-items:center;
 }
 
 .hero-buttons img{
-width:220px;
+width:45vw;
 height:auto;
 display:block;
 transition:0.3s;
+width:45vw;
+max-width:170px;
 }
 
 .hero-buttons img:hover{
@@ -817,6 +845,7 @@ font-size:.85rem;
 .hero{
 height:80vh;
 padding-top:80px;
+overflow:hidden;
 }
 
 .hero h1{
