@@ -543,17 +543,14 @@ transform:translateY(-3px);
 
 0%{
 background-size:100%;
-background-position:center center;
 }
 
 50%{
-background-size:108%;
-background-position:center top;
+background-size:110%;
 }
 
 100%{
 background-size:100%;
-background-position:center center;
 }
 
 }
