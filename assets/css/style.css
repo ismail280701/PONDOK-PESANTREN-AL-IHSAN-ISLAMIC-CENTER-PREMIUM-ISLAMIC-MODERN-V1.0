@@ -264,53 +264,38 @@ header.scrolled .menu-toggle{
    BUTTON AREA
 ===================================== */
 
-.hero-buttons{
-    margin-top:25px;
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.hero-buttons img{
-    max-width:280px;
-    transition:.3s;
-}
-
-.hero-buttons img:hover{
-    transform:translateY(-5px) scale(1.03);
-}
-
 .quick-links .button-grid{
 display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:25px;
-max-width:1200px;
-margin:auto;
+flex-direction:column;
+align-items:center;
+gap:15px;
 }
 
-.quick-links .button-grid a{
-width:220px;
-display:flex;
-justify-content:center;
-}
-
-.row-top{
-display:flex;
-justify-content:center;
-gap:25px;
-width:100%;
-margin-bottom:25px;
-flex-wrap:wrap;
-}
-
+.row-top,
 .row-bottom{
 display:flex;
 justify-content:center;
-gap:25px;
-width:100%;
+gap:20px;
 flex-wrap:wrap;
+}
+
+.row-top a,
+.row-bottom a{
+width:170px;
+display:flex;
+justify-content:center;
+}
+
+.row-top img,
+.row-bottom img{
+width:170px;
+height:auto;
+transition:0.3s;
+}
+
+.row-top img:hover,
+.row-bottom img:hover{
+transform:translateY(-3px);
 }
 
 /* =====================================
