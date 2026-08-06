@@ -701,10 +701,23 @@ max-width:170px;
         display:block;
     }
 
-    .hero{
-    min-height:100dvh;
+.hero{
+    height:100vh;
+    min-height:100vh;
+    padding-top:0;
+    margin-top:0;
+    background-position:center center !important;
+       display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.hero-content{
     padding-top:90px;
-   overflow:hidden;
+}
+body,
+html{
+    margin:0;
+    padding:0;
 }
 
     .hero h1{
@@ -714,6 +727,13 @@ max-width:170px;
     .hero p{
         font-size:.95rem;
     }
+header{
+background:transparent;
+}
+
+header.scrolled{
+background:rgba(20,77,57,.95);
+}
 
    .hero-buttons{
 display:flex;
