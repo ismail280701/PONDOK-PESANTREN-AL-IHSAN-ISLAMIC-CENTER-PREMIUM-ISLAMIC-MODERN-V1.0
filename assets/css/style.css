@@ -46,6 +46,11 @@ body{
     --transition:.3s ease;
 }
 
+.nav-menu a.active{
+    color:#d4af37;
+    font-weight:700;
+}
+
 /* =====================================
    GLOBAL
 ===================================== */
