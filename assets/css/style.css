@@ -588,9 +588,26 @@ transform:translateY(-3px);
         font-size:.95rem;
     }
 
-    .hero-buttons img{
-        max-width:150px;
-    }
+   .hero-buttons{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:15px;
+width:100%;
+}
+
+.hero-buttons a{
+display:flex;
+justify-content:center;
+width:100%;
+}
+
+.hero-buttons img{
+max-width:220px;
+width:100%;
+height:auto;
+}
 
     .explore-grid{
         grid-template-columns:repeat(2,1fr);
