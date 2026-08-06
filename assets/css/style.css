@@ -249,6 +249,9 @@ header.scrolled .menu-toggle{
     max-width:900px;
    text-align:center;
 margin:auto;
+   display:flex;
+flex-direction:column;
+align-items:center;
 }
 
 .hero h1{
@@ -598,7 +601,10 @@ margin:auto;
 display:flex;
 justify-content:center;
 align-items:center;
-gap:10px;
+gap:20px;
+margin-top:30px;
+flex-wrap:wrap;
+width:100%;
 }
 
 .hero-buttons img{
@@ -689,10 +695,6 @@ transform:translateY(-5px);
 
     .hero h1{
         font-size:1.7rem;
-    }
-
-    .hero-buttons{
-        gap:10px;
     }
 
 }
