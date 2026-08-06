@@ -247,6 +247,8 @@ header.scrolled .menu-toggle{
     z-index:2;
     width:90%;
     max-width:900px;
+   text-align:center;
+margin:auto;
 }
 
 .hero h1{
