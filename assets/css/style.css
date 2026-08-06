@@ -125,6 +125,11 @@ header{
     width:100%;
     z-index:999;
     transition:.3s;
+   background:linear-gradient(
+        135deg,
+        #1f6b4f,
+        #164d39
+    );
 }
 
 header.scrolled{
@@ -232,7 +237,8 @@ header.scrolled .menu-toggle{
 ===================================== */
 
 .hero{
-    height:70vh;
+    min-height:100vh;
+    height:auto;
     position:relative;
     display:flex;
     justify-content:center;
@@ -322,14 +328,17 @@ transform:translateY(-3px);
 }
 
 .explore-card{
-    background:
-    linear-gradient(
-    135deg,
-    rgba(255,255,255,.92),
-    rgba(236,245,239,.95)
-    );
+    .explore-card{
+background:
+linear-gradient(
+135deg,
+rgba(31,107,79,.08),
+rgba(212,175,55,.08)
+);
 
-    backdrop-filter:blur(20px);
+    backdrop-filter:blur(15px);
+
+border:1px solid rgba(31,107,79,.15);
 
     border-radius:25px;
 
@@ -337,9 +346,7 @@ transform:translateY(-3px);
 
     box-shadow:
     0 15px 35px rgba(0,0,0,.10);
-
-    border:
-    1px solid rgba(255,255,255,.40);
+       
    overflow:hidden;
 position:relative;
 }
@@ -682,7 +689,7 @@ height:auto;
     }
 
     .hero{
-        height:70vh;
+        min-height:100vh;
     }
 
     .hero h1{
