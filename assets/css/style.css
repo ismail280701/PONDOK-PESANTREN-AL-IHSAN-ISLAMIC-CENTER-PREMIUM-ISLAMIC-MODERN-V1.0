@@ -281,6 +281,38 @@ header.scrolled .menu-toggle{
     transform:translateY(-5px) scale(1.03);
 }
 
+.quick-links .button-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.quick-links .button-grid a{
+width:220px;
+display:flex;
+justify-content:center;
+}
+
+.row-top{
+display:flex;
+justify-content:center;
+gap:25px;
+width:100%;
+margin-bottom:25px;
+flex-wrap:wrap;
+}
+
+.row-bottom{
+display:flex;
+justify-content:center;
+gap:25px;
+width:100%;
+flex-wrap:wrap;
+}
+
 /* =====================================
    JELAJAHI WEBSITE
 ===================================== */
