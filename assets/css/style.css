@@ -243,7 +243,6 @@ header.scrolled .menu-toggle{
 
 .hero{
     min-height:100dvh;
-   padding-top:90px;
     height:auto;
     position:relative;
     display:flex;
@@ -655,7 +654,6 @@ font-size:.85rem;
 
 .hero{
     min-height:100dvh;
-    padding-top:90px;
    overflow:hidden;
 }
 
@@ -704,15 +702,11 @@ max-width:170px;
 .hero{
     height:100vh;
     min-height:100vh;
-    padding-top:0;
     margin-top:0;
     background-position:center center !important;
        display:flex;
     align-items:center;
     justify-content:center;
-}
-.hero-content{
-    padding-top:90px;
 }
 body,
 html{
@@ -848,7 +842,6 @@ font-size:.85rem;
 
 .hero{
 height:80vh;
-padding-top:80px;
 overflow:hidden;
 }
 
