@@ -256,20 +256,12 @@ header.scrolled .menu-toggle{
    overflow:hidden;
 }
 
-.hero::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:inherit;
-    animation:zoomHero 20s ease-in-out infinite alternate;
-
 .hero::before{
     content:"";
     position:absolute;
     inset:0;
     background:
 linear-gradient(
-rgba(22,77,57,.55),
 rgba(0,0,0,.45)
 );
 }
@@ -340,9 +332,9 @@ transform:translateY(-3px);
 ===================================== */
 
 .explore{
-    margin-top:-120px;
+    margin-top:-60px;
     position:relative;
-    z-index:10;
+    z-index:5;
 }
 
     .explore-card{
@@ -616,14 +608,6 @@ background-size:110%;
 background-size:100%;
 }
 
-}
-@keyframes zoomHero{
-    from{
-        transform:scale(1);
-    }
-    to{
-        transform:scale(1.08);
-    }
 }
 
 /* =====================================
