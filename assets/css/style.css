@@ -132,7 +132,7 @@ header.scrolled{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 5%;
+    padding:10px 5%;
 }
 
 .logo-area{
@@ -142,15 +142,15 @@ header.scrolled{
 }
 
 .logo-area img{
-    width:50px;
-    height:50px;
+    width:42px;
+    height:42px;
     object-fit:contain;
 }
 
 .logo-text{
     font-weight:700;
     color:white;
-    font-size:.95rem;
+    font-size:.85rem;
 }
 
 header.scrolled .logo-text{
@@ -225,7 +225,7 @@ header.scrolled .menu-toggle{
 ===================================== */
 
 .hero{
-    height:70vh;
+    height:85vh;
     position:relative;
     display:flex;
     justify-content:center;
