@@ -551,39 +551,62 @@ transform:translateY(-3px);
 /* =====================================
    TABLET
 ===================================== */
-
 @media (max-width:992px){
 
 .footer-grid{
 grid-template-columns:1fr;
 }
 
+.navbar{
+padding:10px 4%;
+}
+
+.logo-area img{
+width:40px;
+height:40px;
+}
+
+.logo-text{
+font-size:.8rem;
+}
+
+.nav-menu{
+gap:15px;
+}
+
+.nav-menu a{
+font-size:.85rem;
+}
+
 .hero{
-height:75vh;
+height:70vh;
 }
 
 .hero h1{
-font-size:2.8rem;
+font-size:2rem;
+line-height:1.2;
+margin-bottom:10px;
 }
 
 .hero p{
-font-size:1rem;
+font-size:.9rem;
+max-width:700px;
+margin:auto;
 }
 
 .hero-buttons{
 display:flex;
 justify-content:center;
 align-items:center;
-gap:12px;
+gap:10px;
 }
 
 .hero-buttons img{
-width:140px;
+width:120px;
 height:auto;
 }
 
 }
-
 /* =====================================
    MOBILE
 ===================================== */
