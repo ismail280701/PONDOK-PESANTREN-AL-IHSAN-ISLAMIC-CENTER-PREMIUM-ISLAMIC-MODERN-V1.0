@@ -253,7 +253,11 @@ header.scrolled .menu-toggle{
     content:"";
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.45);
+    background:
+linear-gradient(
+rgba(22,77,57,.55),
+rgba(0,0,0,.45)
+);
 }
 
 .hero-content{
@@ -353,10 +357,12 @@ position:relative;
 
 .explore-title{
     text-align:center;
-    color:var(--primary);
+    color:#1f6b4f;
     margin-bottom:20px;
-    font-size:1.3rem;
-    font-weight:700;
+    font-size:1.6rem;
+    font-weight:800;
+   text-shadow:
+0 3px 10px rgba(31,107,79,.15);
 }
 
 .explore-grid{
