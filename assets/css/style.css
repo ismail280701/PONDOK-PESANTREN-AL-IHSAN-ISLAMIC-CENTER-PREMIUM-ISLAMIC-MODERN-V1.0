@@ -719,4 +719,52 @@ box-shadow:0 10px 25px rgba(0,0,0,.1);
 transform:scale(1.05);
 }
 
+/* =====================================
+   TABLET LANDSCAPE FIX
+===================================== */
 
+@media (min-width:769px) and (max-width:1200px){
+
+.navbar{
+padding:10px 4%;
+}
+
+.logo-area img{
+width:40px;
+height:40px;
+}
+
+.logo-text{
+font-size:.8rem;
+}
+
+.nav-menu{
+gap:15px;
+}
+
+.nav-menu a{
+font-size:.85rem;
+}
+
+.hero{
+height:80vh;
+padding-top:80px;
+}
+
+.hero h1{
+font-size:3rem;
+line-height:1.2;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1rem;
+max-width:700px;
+margin:auto;
+}
+
+.hero-buttons img{
+width:220px;
+}
+
+}
