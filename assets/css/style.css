@@ -246,7 +246,7 @@ header.scrolled .menu-toggle{
     text-align:center;
     color:white;
     overflow:hidden;
-   animation:none;
+   animation:animation:heroZoom 20s ease-in-out infinite;
    overflow:hidden;
     background-size:cover !important;
     background-position:center center !important;
@@ -696,14 +696,13 @@ max-width:170px;
     }
 
 .hero{
-    height:auto;
-    min-height:650vh;
    padding:120px 20px 60px;
     margin-top:0;
     background-position:center center !important;
        display:flex;
     align-items:center;
     justify-content:center;
+   animation:none;
 }
 body,
 html{
