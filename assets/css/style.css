@@ -589,9 +589,10 @@ FLOATING WHATSAPP
 
 .floating-wa{
 position:fixed;
-bottom:90px;
+bottom:20px;
 right:20px;
 z-index:999;
+transition:.4s ease;
 }
 
 .wa-main{
@@ -606,6 +607,10 @@ color:white;
 font-size:28px;
 cursor:pointer;
 box-shadow:var(--shadow-lg);
+}
+
+.floating-wa.move-up{
+bottom:95px;
 }
 
 .wa-list{
@@ -640,25 +645,38 @@ BACK TO TOP
 position:fixed;
 right:20px;
 bottom:20px;
+
 width:55px;
 height:55px;
+
 border-radius:50%;
+
 background:var(--secondary);
+
 color:white;
+
 display:flex;
 align-items:center;
 justify-content:center;
+
 font-size:22px;
+
 cursor:pointer;
+
 opacity:0;
 visibility:hidden;
-transition:.3s;
-z-index:999;
+
+transform:translateY(20px);
+
+transition:.4s ease;
+
+z-index:998;
 }
 
 .back-top.show{
 opacity:1;
 visibility:visible;
+transform:translateY(0);
 }
 
 /* =====================================
