@@ -148,3 +148,26 @@ function toggleWA(){
     }
 
 }
+
+/* =====================================
+   WA MOVE UP WHEN SCROLL
+===================================== */
+
+window.addEventListener("scroll", () => {
+
+    const wa =
+        document.querySelector(".floating-wa");
+
+    if(!wa) return;
+
+    if(window.scrollY > 300){
+
+        wa.classList.add("move-up");
+
+    }else{
+
+        wa.classList.remove("move-up");
+
+    }
+
+});
