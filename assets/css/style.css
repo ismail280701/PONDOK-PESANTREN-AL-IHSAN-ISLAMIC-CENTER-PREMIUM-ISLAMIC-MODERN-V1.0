@@ -905,14 +905,10 @@ padding:0;
 
 .hero h1{
     font-size:2rem;
-    position:relative;
-top:-145px;
 }  
 
-.hero p{  
+.hero p{
     font-size:.95rem;
-    position:relative;
-top:140px;
 }
 
 header{
@@ -930,8 +926,6 @@ align-items:center;
 gap:12px;
 margin-top:20px;
 flex-wrap:nowrap;
-position:relative;
-top:-135px;
 }
 
 .hero-buttons a{
@@ -969,11 +963,11 @@ transform:translateY(-5px);
 }
 
 .hero-content{
-transform:translateY(-240px);
+transform:translateY(-190px);
 }
 
 .explore{
-margin-top:-180px;
+margin-top:-260px;
 }
 
 }
