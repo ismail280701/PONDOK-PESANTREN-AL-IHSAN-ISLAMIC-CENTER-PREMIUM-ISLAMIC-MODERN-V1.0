@@ -443,7 +443,7 @@ z-index:5;
 }
 
 .explore-card{
-
+padding:20px;
 background:
 linear-gradient(
 135deg,
@@ -591,8 +591,8 @@ FLOATING WHATSAPP
 
 .floating-wa{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:30px;
+right:12px;
 z-index:999;
 transition:.3s ease;
 }
@@ -970,7 +970,9 @@ transform:translateY(-150px);
 }
 
 .explore{
-margin-top:none;
+margin-top:-120px;
+position:relative;
+z-index:5;
 }
 
 }
