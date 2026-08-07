@@ -320,7 +320,7 @@ HERO SECTION
 ===================================== */
 
 .hero{
-min-height:100dvh;
+min-height:70dvh;
 height:100vh;
 position:relative;
 display:flex;
