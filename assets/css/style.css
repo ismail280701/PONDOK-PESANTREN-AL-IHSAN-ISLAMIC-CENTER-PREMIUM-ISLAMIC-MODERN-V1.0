@@ -255,7 +255,6 @@ align-items:center;
 text-align:center;
 color:white;
 overflow:hidden;
-animation:heroZoomDesktop 20s ease-in-out infinite;
 overflow:hidden;
 background-size:cover !important;
 background-position:center center !important;
@@ -661,7 +660,6 @@ font-size:.85rem;
 .hero{
 min-height:100dvh;
 overflow:hidden;
-animation:heroZoomTablet 25s ease-in-out infinite;
 }
 
 .hero h1{
@@ -730,7 +728,6 @@ background-position:center center !important;
 display:flex;
 align-items:center;
 justify-content:center;
-animation:heroZoomMobile 30s ease-in-out infinite;
 }
 
 body,
