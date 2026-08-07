@@ -903,7 +903,8 @@ margin:0;
 padding:0;
 }
 
-.hero h1{  
+.hero h1{
+    color:red !important;
     font-size:2rem;
     position:relative;
 top:-150px;
