@@ -906,13 +906,13 @@ padding:0;
 .hero h1{  
     font-size:2rem;
     position:relative;
-top:-110px;
+top:-150px;
 }  
 
 .hero p{  
     font-size:.95rem;
     position:relative;
-top:80px;
+top:130px;
 }
 
 header{
@@ -931,7 +931,7 @@ gap:12px;
 margin-top:20px;
 flex-wrap:nowrap;
 position:relative;
-top:-80px;
+top:-140px;
 }
 
 .hero-buttons a{
