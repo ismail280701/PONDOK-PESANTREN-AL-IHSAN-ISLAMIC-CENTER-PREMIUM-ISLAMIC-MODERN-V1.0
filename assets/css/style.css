@@ -894,7 +894,7 @@ background-position:center center !important;
 display:flex;
 align-items:center;
 justify-content:center;
-height:700PX;
+height:600PX;
 animation:none !important;
 transform:none !important;
 }
@@ -970,8 +970,8 @@ transform:translateY(-150px);
 }
 
 .explore{
-margin-top:-500px !important;
-background:red !important;
+margin-top:0;
+background:transparent;
 }
 
 }
