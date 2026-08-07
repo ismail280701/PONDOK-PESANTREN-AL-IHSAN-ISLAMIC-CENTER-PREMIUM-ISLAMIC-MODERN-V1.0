@@ -612,6 +612,11 @@ font-size:28px;
 cursor:pointer;
 box-shadow:var(--shadow-lg);
 animation: waPulse 2.5s infinite;
+transition:.3s ease;
+}
+
+.wa-main:hover{
+transform:translateY(-4px);
 }
 
 .floating-wa.move-up{
@@ -695,6 +700,12 @@ transform:translateY(20px);
 transition:.4s ease;
 
 z-index:998;
+transition:.3s ease;
+transform:translateY(20px);
+}
+
+.back-top:hover{
+transform:translateY(-4px);
 }
 
 .back-top.show{
