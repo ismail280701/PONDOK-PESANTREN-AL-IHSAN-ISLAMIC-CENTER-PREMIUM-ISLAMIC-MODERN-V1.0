@@ -246,8 +246,11 @@ header.scrolled .menu-toggle{
     text-align:center;
     color:white;
     overflow:hidden;
-   animation:heroZoom 20s ease-in-out infinite;
+   animation:none;
    overflow:hidden;
+    background-size:cover !important;
+    background-position:center center !important;
+    background-repeat:no-repeat !important;
 }
 
 .hero::before{
@@ -693,8 +696,9 @@ max-width:170px;
     }
 
 .hero{
-    height:100vh;
-    min-height:100vh;
+    height:auto;
+    min-height:650vh;
+   padding:120px 20px 60px;
     margin-top:0;
     background-position:center center !important;
        display:flex;
