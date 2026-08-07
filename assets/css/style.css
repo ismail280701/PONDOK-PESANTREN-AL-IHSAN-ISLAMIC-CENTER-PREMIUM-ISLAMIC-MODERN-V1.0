@@ -280,6 +280,12 @@ color:var(--primary);
 }
 
 .mobile-menu{
+position:fixed;
+top:0;
+left:-300px;
+
+width:280px;
+height:100vh;
 
 background:
 linear-gradient(
@@ -288,6 +294,13 @@ linear-gradient(
 #f6fbf8
 );
 
+box-shadow:var(--shadow-lg);
+
+z-index:9999;
+
+padding:30px;
+
+transition:.4s;
 }
 
 .mobile-menu.active{
