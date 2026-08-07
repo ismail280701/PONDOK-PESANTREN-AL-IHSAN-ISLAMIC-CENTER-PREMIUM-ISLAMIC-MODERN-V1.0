@@ -904,16 +904,15 @@ padding:0;
 }
 
 .hero h1{
-    color:red !important;
     font-size:2rem;
     position:relative;
-top:-150px;
+top:-145px;
 }  
 
 .hero p{  
     font-size:.95rem;
     position:relative;
-top:130px;
+top:140px;
 }
 
 header{
@@ -932,7 +931,7 @@ gap:12px;
 margin-top:20px;
 flex-wrap:nowrap;
 position:relative;
-top:-140px;
+top:-135px;
 }
 
 .hero-buttons a{
