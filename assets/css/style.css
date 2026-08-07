@@ -970,9 +970,8 @@ transform:translateY(-150px);
 }
 
 .explore{
-margin-top:-120px;
-position:relative;
-z-index:5;
+margin-top:-500px !important;
+background:red !important;
 }
 
 }
