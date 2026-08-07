@@ -93,17 +93,30 @@ revealOnScroll();
 const backTop =
 document.getElementById("backTop");
 
-window.addEventListener("scroll", () => {
+const floatingWA =
+document.querySelector(".floating-wa");
 
-    if(!backTop) return;
+window.addEventListener("scroll", () => {
 
     if(window.scrollY > 300){
 
-        backTop.classList.add("show");
+        if(backTop){
+            backTop.classList.add("show");
+        }
+
+        if(floatingWA){
+            floatingWA.classList.add("move-up");
+        }
 
     }else{
 
-        backTop.classList.remove("show");
+        if(backTop){
+            backTop.classList.remove("show");
+        }
+
+        if(floatingWA){
+            floatingWA.classList.remove("move-up");
+        }
 
     }
 
