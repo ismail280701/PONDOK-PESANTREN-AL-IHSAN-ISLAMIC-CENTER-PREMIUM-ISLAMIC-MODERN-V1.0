@@ -693,15 +693,6 @@ cursor:pointer;
 transition:.3s;
 }
 
-.read-more-btn:hover{
-transform:translateY(-3px);
-}
-
-.full-text{
-display:block;
-}
-
-
 .read-more-btn{
 display:none;
 }
@@ -1261,6 +1252,14 @@ justify-content:center;
 
 .welcome-buttons img{
 width:160px;
+}
+
+.read-more-btn:hover{
+transform:translateY(-3px);
+}
+
+.full-text{
+display:block;
 }
 
 }
