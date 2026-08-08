@@ -1171,9 +1171,18 @@ rgba(212,175,55,.15);
 
 .lulusan-icon{
 
-font-size:3rem;
-
 margin-bottom:15px;
+}
+
+.lulusan-icon img{
+
+width:70px;
+
+height:70px;
+
+object-fit:contain;
+
+display:block;
 }
 
 .lulusan-card h3{
