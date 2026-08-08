@@ -881,138 +881,78 @@ MOBILE
 
 @media (max-width:768px){
 
-.nav-menu{  
-    display:none;  
-}  
-
-.menu-toggle{  
-    display:block;  
-}
-
 .hero{
-height:100vh;
-min-height:850px;
-
-padding:120px 20px 120px;
-
+height:72vh;
+min-height:auto;
+padding:100px 20px 80px;
+background-position:center center !important;
+background-size:cover !important;
 display:flex;
 justify-content:center;
 align-items:center;
-
-background-position:center center !important;
+overflow:hidden;
 }
 
 .hero-content{
-position:relative;
-z-index:2;
-width:90%;
-max-width:900px;
-text-align:center;
+transform:none !important;
 margin:auto;
-display:flex;
-flex-direction:column;
-align-items:center;
-
-transform:none;
-}
-
-
-
-.explore{
-margin-top:-180px;
-position:relative;
-z-index:10;
-}
-
-body,
-html{
-margin:0;
-padding:0;
+width:100%;
+max-width:100%;
 }
 
 .hero h1{
-font-size:3rem;
-line-height:1.1;
-margin-bottom:15px;
-} 
+font-size:2.2rem;
+line-height:1.15;
+margin-bottom:18px;
+}
 
 .hero p{
 font-size:1rem;
-line-height:1.8;
-margin-bottom:10px;
-}
-
-header{
-background:transparent;
-}
-
-header.scrolled{
-background:rgba(20,77,57,.95);
+line-height:1.7;
+margin-bottom:25px;
 }
 
 .hero-buttons{
 display:flex;
 justify-content:center;
 align-items:center;
-gap:12px;
-margin-top:25px;
-flex-wrap:nowrap;
-}
-
-.hero-buttons a{
-display:flex;
-justify-content:center;
-align-items:center;
+gap:14px;
+margin-top:10px;
 }
 
 .hero-buttons img{
-height:auto;
-display:block;
-transition:0.3s;
 width:42vw;
 max-width:150px;
 }
 
-.hero-buttons img:hover{
-transform:translateY(-5px);
+.explore{
+margin-top:-70px;
+padding-top:0;
 }
 
-.explore-grid{  
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-    justify-items:center;
-}  
-
-.content-box{  
-    padding:25px;  
-}  
-
-.floating-wa{  
-    right:15px;  
-}  
-
-.back-top{  
-    right:15px;  
+.explore-title{
+font-size:2.2rem;
 }
 
+.explore-grid{
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+justify-items:center;
 }
 
-@keyframes heroZoomMobile{
-
-0%{
-background-size:100%;
+.content-box{
+padding:25px;
 }
 
-50%{
-background-size:103%;
+.floating-wa{
+right:15px;
 }
 
-100%{
-background-size:100%;
+.back-top{
+right:15px;
 }
 
 }
-
 /* =====================================
 SMALL MOBILE
 ===================================== */
