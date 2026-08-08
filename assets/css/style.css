@@ -1354,4 +1354,12 @@ filter:
 drop-shadow(0 8px 15px rgba(0,0,0,.25));
 }
 
+.read-more-btn{
+display:none;
+}
+
+.full-text{
+display:block !important;
+}
+
 }
