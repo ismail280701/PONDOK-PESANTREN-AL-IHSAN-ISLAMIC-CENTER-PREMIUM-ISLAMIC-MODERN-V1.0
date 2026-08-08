@@ -1636,7 +1636,13 @@ FOOTER PREMIUM
 ===================================== */
 
 .footer{
-background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+background:
+linear-gradient(
+135deg,
+#124734 0%,
+#1f6b4f 50%,
+#124734 100%
+);
 color:white;
 padding:70px 0 30px;
 margin-top:80px;
