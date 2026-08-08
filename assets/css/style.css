@@ -890,13 +890,15 @@ MOBILE
 }
 
 .hero{
-padding:120px 20px 180px;
 margin-top:0;
 background-position:center center !important;
 display:flex;
 align-items:center;
 justify-content:center;
 height:auto;
+min-height:520px;
+padding:120px 20px 180px;
+padding-bottom:180px;
 animation:none !important;
 transform:none !important;
 }
