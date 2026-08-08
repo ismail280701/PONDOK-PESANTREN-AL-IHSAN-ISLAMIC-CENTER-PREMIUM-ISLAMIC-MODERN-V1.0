@@ -222,3 +222,35 @@ revealAnimation
 );
 
 revealAnimation();
+
+// ACCORDION PROGRAM UNGGULAN
+
+const accordionItems =
+document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach(item => {
+
+const header =
+item.querySelector(".accordion-header");
+
+header.addEventListener("click", () => {
+
+item.classList.toggle("active");
+
+const content =
+item.querySelector(".accordion-content");
+
+if(content.style.maxHeight){
+
+content.style.maxHeight = null;
+
+}else{
+
+content.style.maxHeight =
+content.scrollHeight + "px";
+
+}
+
+});
+
+});
