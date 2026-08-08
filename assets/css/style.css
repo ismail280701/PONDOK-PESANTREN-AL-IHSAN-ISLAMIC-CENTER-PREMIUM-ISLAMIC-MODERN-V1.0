@@ -702,6 +702,122 @@ display:block;
 }
 
 /* =====================================
+KEUNGGULAN PONDOK
+===================================== */
+
+.advantages-box{
+text-align:center;
+}
+
+.advantages-title{
+
+font-size:2rem;
+font-weight:800;
+margin-bottom:10px;
+
+background:
+linear-gradient(
+90deg,
+#d4af37,
+#f7d774,
+#d4af37
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.advantages-subtitle{
+
+max-width:700px;
+margin:0 auto 35px;
+
+color:#666;
+line-height:1.8;
+}
+
+.advantages-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+}
+
+.advantage-card{
+
+background:#fff;
+
+border-radius:25px;
+
+padding:25px;
+
+position:relative;
+
+overflow:hidden;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s ease;
+}
+
+.advantage-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:4px;
+
+background:
+linear-gradient(
+90deg,
+#d4af37,
+#f7d774,
+#d4af37
+);
+}
+
+.advantage-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 20px 35px rgba(0,0,0,.12);
+}
+
+.advantage-card img{
+
+width:80px;
+height:80px;
+
+object-fit:contain;
+
+margin:0 auto 15px;
+}
+
+.advantage-card h3{
+
+color:#1f6b4f;
+
+margin-bottom:10px;
+}
+
+.advantage-card p{
+
+line-height:1.8;
+
+color:#555;
+}
+
+/* =====================================
 CONTENT SECTION
 ===================================== */
 
@@ -1002,6 +1118,40 @@ transform:
 scale(.96);
 }
 
+/* =====================================
+ANIMATION KEUNGGULAN PONDOK
+===================================== */
+
+.reveal-left,
+.reveal-right{
+
+opacity:0;
+
+transition:.8s ease;
+}
+
+.reveal-left{
+
+transform:
+translateX(-80px);
+}
+
+.reveal-right{
+
+transform:
+translateX(80px);
+}
+
+.reveal-active{
+
+opacity:1;
+
+transform:
+translateX(0);
+}
+
+=====================================
+
 @keyframes heroBreath{
 
 0%{
@@ -1252,6 +1402,39 @@ justify-content:center;
 
 .welcome-buttons img{
 width:160px;
+}
+
+/* =====================================
+KEUNGGULAN PONDOK
+===================================== */
+.advantages-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:15px;
+}
+
+.advantage-card{
+
+padding:18px;
+}
+
+.advantage-card img{
+
+width:55px;
+height:55px;
+}
+
+.advantage-card h3{
+
+font-size:.9rem;
+}
+
+.advantage-card p{
+
+font-size:.8rem;
+line-height:1.5;
 }
 
 }
