@@ -1229,6 +1229,134 @@ color:#1f6b4f;
 }
 
 /* =====================================
+MENGAPA MEMILIH AL IHSAN
+===================================== */
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:
+1fr 1.2fr;
+
+gap:40px;
+
+align-items:center;
+}
+
+.why-image img{
+
+width:100%;
+
+height:100%;
+
+min-height:420px;
+
+object-fit:cover;
+
+border-radius:25px;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.12);
+}
+
+.why-content h2{
+
+color:#d4af37;
+
+font-size:2rem;
+
+font-weight:800;
+
+margin-bottom:20px;
+}
+
+.why-desc{
+
+line-height:1.9;
+
+color:#555;
+
+margin-bottom:25px;
+}
+
+.why-list{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:15px;
+}
+
+.why-item{
+
+background:
+rgba(31,107,79,.06);
+
+padding:14px 18px;
+
+border-radius:14px;
+
+font-weight:600;
+
+color:#1f6b4f;
+
+transition:.3s;
+}
+
+.why-item:hover{
+
+transform:translateY(-4px);
+
+background:
+rgba(31,107,79,.10);
+}
+
+.why-button{
+
+margin-top:35px;
+}
+
+.why-button a{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:15px 30px;
+
+background:
+linear-gradient(
+135deg,
+#1f6b4f,
+#2d8a64
+);
+
+color:white;
+
+font-weight:700;
+
+border-radius:50px;
+
+box-shadow:
+0 10px 25px rgba(31,107,79,.25);
+
+transition:.3s;
+}
+
+.why-button a:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 15px 35px rgba(31,107,79,.35);
+}
+
+/* =====================================
 CONTENT SECTION
 ===================================== */
 
@@ -1907,6 +2035,41 @@ padding:25px;
 .lulusan-number{
 
 font-size:2.4rem;
+}
+
+/* ===== MENGAPA MEMILIH AL IHSAN ===== */
+.why-grid{
+
+grid-template-columns:1fr;
+
+gap:25px;
+}
+
+.why-image img{
+
+min-height:240px;
+}
+
+.why-content h2{
+
+font-size:1.6rem;
+
+text-align:center;
+}
+
+.why-desc{
+
+text-align:center;
+}
+
+.why-list{
+
+grid-template-columns:1fr;
+}
+
+.why-button{
+
+text-align:center;
 }
 }
 /* =====================================
