@@ -24,12 +24,27 @@ color:#222;
 overflow-x:hidden;
 
 background:
+radial-gradient(
+circle at top right,
+rgba(31,107,79,.10) 0%,
+transparent 30%
+),
+
+radial-gradient(
+circle at bottom left,
+rgba(212,175,55,.08) 0%,
+transparent 25%
+),
+
 linear-gradient(
 180deg,
-#f8faf8 0%,
-#eef5f1 45%,
-#f8faf8 100%
+#f8fcfa 0%,
+#eef7f2 50%,
+#f6fbf8 100%
 );
+
+color:#222;
+overflow-x:hidden;
 
 }
 
