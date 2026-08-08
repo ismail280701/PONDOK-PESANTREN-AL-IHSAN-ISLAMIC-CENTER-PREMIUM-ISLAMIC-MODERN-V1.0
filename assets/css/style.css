@@ -22,6 +22,15 @@ font-family:'Poppins',sans-serif;
 background:#ffffff;
 color:#222;
 overflow-x:hidden;
+
+background:
+linear-gradient(
+180deg,
+#f8faf8 0%,
+#eef5f1 45%,
+#f8faf8 100%
+);
+
 }
 
 /* =====================================
