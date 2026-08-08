@@ -892,26 +892,26 @@ padding:10px 20px;
 }
 
 .logo-area{
-padding:8px 14px;
-max-width:75%;
+padding:8px 12px;
+max-width:80%;
 }
 
 .logo-area img{
-width:50px;
-height:50px;
+width:42px;
+height:42px;
 object-fit:contain;
 }
 
 .logo-text{
-font-size:1.5rem;
-line-height:1.25;
+font-size:.85rem;
+line-height:1.2;
 }
 
 /* ===== HERO ===== */
 
 .hero{
-height:72vh;
-padding:110px 20px 80px;
+height:68vh;
+padding:95px 20px 60px;
 }
 
 .hero-content{
@@ -943,11 +943,11 @@ max-width:150px;
 /* ===== JELAJAHI ===== */
 
 .explore{
-margin-top:-50px;
+margin-top:-90px;
 }
 
 .explore-title{
-font-size:2rem;
+font-size:2.2rem;
 margin-bottom:25px;
 }
 
