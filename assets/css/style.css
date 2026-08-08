@@ -567,6 +567,86 @@ background:linear-gradient(
 }
 
 /* =====================================
+KATA PENGANTAR
+===================================== */
+
+.welcome-grid{
+display:grid;
+grid-template-columns:350px 1fr;
+gap:40px;
+align-items:center;
+}
+
+.welcome-image img{
+width:100%;
+border-radius:25px;
+box-shadow:var(--shadow-lg);
+}
+
+.welcome-title{
+font-size:2.2rem;
+font-weight:800;
+
+background:linear-gradient(
+135deg,
+#d4af37,
+#f7d774,
+#d4af37
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+margin-bottom:25px;
+}
+
+.welcome-text{
+line-height:1.9;
+}
+
+.welcome-buttons{
+display:flex;
+gap:15px;
+align-items:center;
+margin-top:25px;
+flex-wrap:wrap;
+}
+
+.welcome-buttons img{
+width:180px;
+}
+
+.read-more-btn{
+padding:12px 24px;
+
+border:none;
+
+border-radius:999px;
+
+background:linear-gradient(
+135deg,
+#d4af37,
+#f7d774
+);
+
+color:#164d39;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.read-more-btn:hover{
+transform:translateY(-3px);
+}
+
+.full-text{
+display:block;
+}
+
+/* =====================================
 CONTENT SECTION
 ===================================== */
 
@@ -1082,6 +1162,39 @@ margin-bottom:25px;
 grid-template-columns:repeat(2,1fr);
 gap:18px;
 justify-items:center;
+}
+
+.welcome-grid{
+grid-template-columns:1fr;
+}
+
+.welcome-image{
+order:1;
+}
+
+.welcome-content{
+order:2;
+}
+
+.welcome-title{
+font-size:1.8rem;
+text-align:center;
+}
+
+.full-text{
+display:none;
+}
+
+.full-text.show{
+display:block;
+}
+
+.welcome-buttons{
+justify-content:center;
+}
+
+.welcome-buttons img{
+width:160px;
 }
 
 }
