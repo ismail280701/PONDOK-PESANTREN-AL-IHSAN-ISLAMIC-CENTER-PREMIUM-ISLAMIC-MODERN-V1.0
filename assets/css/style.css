@@ -792,6 +792,38 @@ opacity:1;
 transform:translateX(0);
 }
 
+.hero-buttons img,
+.explore-grid img{
+
+transition:
+transform .3s ease,
+filter .3s ease,
+box-shadow .3s ease;
+
+cursor:pointer;
+}
+
+.hero-buttons img:hover,
+.explore-grid img:hover{
+
+transform:
+translateY(-6px)
+scale(1.05);
+
+filter:
+brightness(1.08);
+
+box-shadow:
+0 12px 25px rgba(0,0,0,.25);
+}
+
+.hero-buttons img:active,
+.explore-grid img:active{
+
+transform:
+scale(.96);
+}
+
 @keyframes heroBreath{
 
 0%{
