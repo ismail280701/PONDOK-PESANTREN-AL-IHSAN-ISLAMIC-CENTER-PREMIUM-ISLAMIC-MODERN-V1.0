@@ -481,6 +481,7 @@ display:grid;
 grid-template-columns:repeat(2,1fr));
 gap:15px;
 justify-items:center;
+align-items:center;
 }
 
 .explore-grid img{
@@ -592,8 +593,8 @@ FLOATING WHATSAPP
 
 .floating-wa{
 position:fixed;
-bottom:30px;
-right:12px;
+bottom:20px;
+right:10px;
 z-index:999;
 transition:.3s ease;
 }
@@ -951,7 +952,9 @@ transform:translateY(-5px);
 }
 
 .explore-grid{  
-    grid-template-columns:repeat(2,1fr);  
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    justify-items:center;
 }  
 
 .content-box{  
