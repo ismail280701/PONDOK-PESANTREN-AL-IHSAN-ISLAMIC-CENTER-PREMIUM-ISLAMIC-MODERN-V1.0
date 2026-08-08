@@ -401,6 +401,22 @@ max-width:320px;
 margin:auto;
 }
 
+.hero-line{
+width:90px;
+height:3px;
+margin:25px auto;
+border-radius:50px;
+
+background:linear-gradient(
+90deg,
+transparent,
+#d4af37,
+#f7d774,
+#d4af37,
+transparent
+);
+}
+
 /* =====================================
 BUTTON AREA
 ===================================== */
