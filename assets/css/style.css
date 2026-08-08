@@ -701,6 +701,15 @@ transform:translateY(-3px);
 display:block;
 }
 
+
+.read-more-btn{
+display:none;
+}
+
+.full-text{
+display:block !important;
+}
+
 /* =====================================
 CONTENT SECTION
 ===================================== */
@@ -1252,14 +1261,6 @@ justify-content:center;
 
 .welcome-buttons img{
 width:160px;
-}
-
-.read-more-btn{
-display:none;
-}
-
-.full-text{
-display:block !important;
 }
 
 }
