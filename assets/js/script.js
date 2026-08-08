@@ -171,3 +171,21 @@ window.addEventListener("scroll", () => {
     }
 
 });
+
+function toggleWelcome(){
+
+const text =
+document.querySelector('.full-text');
+
+const btn =
+document.querySelector('.read-more-btn');
+
+text.classList.toggle('show');
+
+if(text.classList.contains('show')){
+btn.innerHTML='Tutup';
+}else{
+btn.innerHTML='Baca Selengkapnya';
+}
+
+}
