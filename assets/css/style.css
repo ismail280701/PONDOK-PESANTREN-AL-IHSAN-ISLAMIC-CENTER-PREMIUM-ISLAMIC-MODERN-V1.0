@@ -415,14 +415,14 @@ flex-wrap:wrap;
 
 .row-top a,
 .row-bottom a{
-width:170px;
+width:140px;
 display:flex;
 justify-content:center;
 }
 
 .row-top img,
 .row-bottom img{
-width:170px;
+width:140px;
 height:auto;
 transition:0.3s;
 }
@@ -999,7 +999,7 @@ SMALL MOBILE
 @media (max-width:480px){
 
 .explore-grid{  
-    grid-template-columns:1fr;  
+    grid-template-columns:repeat(2,1fr);  
 }  
 
 .hero h1{  
