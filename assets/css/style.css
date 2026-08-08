@@ -913,6 +913,86 @@ line-height:1.9;
 color:#555;
 }
 
+.program-divider{
+
+width:120px;
+height:2px;
+
+margin:35px auto 25px;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+#d4af37,
+transparent
+);
+
+}
+
+.program-cta-text{
+
+text-align:center;
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+
+color:#666;
+
+margin-bottom:25px;
+
+}
+
+.program-button{
+
+text-align:center;
+
+margin-top:10px;
+
+}
+
+.program-button a{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:14px 28px;
+
+border-radius:999px;
+
+background:
+linear-gradient(
+135deg,
+#d4af37,
+#f7d774
+);
+
+color:#164d39;
+
+font-weight:700;
+
+box-shadow:
+0 8px 20px rgba(212,175,55,.35);
+
+transition:.3s;
+
+}
+
+.program-button a:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 15px 30px rgba(212,175,55,.45);
+
+}
+
 /* =====================================
 CONTENT SECTION
 ===================================== */
