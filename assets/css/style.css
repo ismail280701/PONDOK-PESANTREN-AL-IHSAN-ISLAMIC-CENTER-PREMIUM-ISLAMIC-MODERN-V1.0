@@ -1254,6 +1254,14 @@ justify-content:center;
 width:160px;
 }
 
+.read-more-btn{
+display:none;
+}
+
+.full-text{
+display:block !important;
+}
+
 }
 /* =====================================
 SMALL MOBILE
