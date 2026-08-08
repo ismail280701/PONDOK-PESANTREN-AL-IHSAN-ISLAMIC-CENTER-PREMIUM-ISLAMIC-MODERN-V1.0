@@ -189,3 +189,36 @@ btn.innerHTML='Baca Selengkapnya';
 }
 
 }
+/* =====================================
+KEUNGGULAN PONDOK
+===================================== */
+const reveals =
+document.querySelectorAll(
+'.reveal-left,.reveal-right'
+);
+
+function revealAnimation(){
+
+reveals.forEach(item=>{
+
+const top =
+item.getBoundingClientRect().top;
+
+if(top < window.innerHeight-100){
+
+item.classList.add(
+'reveal-active'
+);
+
+}
+
+});
+
+}
+
+window.addEventListener(
+'scroll',
+revealAnimation
+);
+
+revealAnimation();
