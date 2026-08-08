@@ -379,8 +379,6 @@ margin:auto;
 display:flex;
 flex-direction:column;
 align-items:center;
-
-transform:translateY(-140px);
 }
 
 .hero h1{
@@ -847,10 +845,6 @@ width:100%;
 .hero-buttons img{
 width:45vw;
 max-width:170px;
-}
-
-.hero-content{
-transform:translateY(-180px);
 }
 
 .explore{
