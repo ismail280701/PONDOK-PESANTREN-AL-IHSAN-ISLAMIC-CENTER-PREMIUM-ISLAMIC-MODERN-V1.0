@@ -141,7 +141,8 @@ top:0;
 left:0;
 width:100%;
 z-index:999;
-
+border-bottom:
+1px solid rgba(212,175,55,.25);
 transition:.4s ease;
 
 background:
@@ -388,11 +389,15 @@ align-items:center;
 font-size:clamp(2rem,5vw,4rem);
 font-weight:800;
 margin-bottom:15px;
+text-shadow:
+0 4px 15px rgba(0,0,0,.45);
 }
 
 .hero p{
 font-size:1rem;
-line-height:1.8;
+line-height:1.7;
+max-width:320px;
+margin:auto;
 }
 
 /* =====================================
@@ -848,6 +853,8 @@ width:100%;
 .hero-buttons img{
 width:45vw;
 max-width:170px;
+filter:
+drop-shadow(0 8px 15px rgba(0,0,0,.25));
 }
 
 .explore{
@@ -932,6 +939,8 @@ gap:18px;
 .hero-buttons img{
 width:42vw;
 max-width:150px;
+filter:
+drop-shadow(0 8px 15px rgba(0,0,0,.25));
 }
 
 /* ===== JELAJAHI ===== */
@@ -1037,6 +1046,8 @@ margin:auto;
 
 .hero-buttons img{
 width:220px;
+filter:
+drop-shadow(0 8px 15px rgba(0,0,0,.25));
 }
 
 }
