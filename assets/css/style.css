@@ -1551,6 +1551,47 @@ color:white;
 font-weight:700;
 }
 
+.ppdb-more{
+
+text-align:center;
+
+margin-top:35px;
+}
+
+.ppdb-more a{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+background:
+linear-gradient(
+135deg,
+#d4af37,
+#f0c75a
+);
+
+color:white;
+
+font-weight:700;
+
+box-shadow:
+0 10px 25px rgba(212,175,55,.25);
+
+transition:.3s;
+}
+
+.ppdb-more a:hover{
+
+transform:translateY(-4px);
+}
+
 /* =====================================
 CONTENT SECTION
 ===================================== */
@@ -2273,11 +2314,48 @@ font-size:1.7rem;
 }
 
 .alur-grid{
-grid-template-columns:1fr;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:12px;
 }
 
 .alur-title{
 font-size:1.6rem;
+}
+
+.alur-card{
+
+padding:18px;
+}
+
+.alur-card h3{
+
+font-size:.95rem;
+
+margin-bottom:15px;
+}
+
+.step{
+
+font-size:.75rem;
+
+padding:8px;
+}
+
+.arrow{
+
+font-size:1rem;
+
+margin:5px 0;
+}
+
+.alur-btn{
+
+padding:10px 14px;
+
+font-size:.75rem;
 }
 }
 /* =====================================
