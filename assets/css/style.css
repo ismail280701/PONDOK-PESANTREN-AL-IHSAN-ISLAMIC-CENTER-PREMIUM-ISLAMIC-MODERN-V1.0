@@ -473,20 +473,15 @@ linear-gradient(
 rgba(31,107,79,.08),
 rgba(255,255,255,.92)
 );
-
 backdrop-filter:blur(20px);
-
 border:1px solid rgba(31,107,79,.15);
-
 border-radius:30px;  
-
 padding:25px;  
-
 box-shadow:  
 0 25px 50px rgba(0,0,0,.15);
-
 overflow:hidden;
 position:relative;
+transform:none;
 }
 
 .explore-title{
