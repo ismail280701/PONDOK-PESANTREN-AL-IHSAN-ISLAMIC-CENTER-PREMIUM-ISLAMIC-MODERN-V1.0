@@ -571,16 +571,27 @@ KATA PENGANTAR
 ===================================== */
 
 .welcome-grid{
-display:grid;
+display:block;
 grid-template-columns:350px 1fr;
 gap:40px;
 align-items:center;
 }
 
+.welcome-image{
+float:left;
+width:340px;
+margin-right:35px;
+margin-bottom:20px;
+}
+
 .welcome-image img{
 width:100%;
-border-radius:25px;
-box-shadow:var(--shadow-lg);
+display:block;
+
+border-radius:20px;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.12);
 }
 
 .welcome-title{
@@ -598,6 +609,50 @@ background:linear-gradient(
 -webkit-text-fill-color:transparent;
 
 margin-bottom:25px;
+}
+
+.islamic-greeting,
+.islamic-closing{
+
+text-align:center;
+
+font-size:1.3rem;
+
+font-weight:600;
+
+color:#1f6b4f;
+
+margin:25px 0;
+
+line-height:2;
+}
+
+.islamic-greeting::before,
+.islamic-closing::before{
+
+content:"✦";
+
+display:block;
+
+color:#d4af37;
+
+font-size:1.3rem;
+
+margin-bottom:8px;
+}
+
+.islamic-greeting::after,
+.islamic-closing::after{
+
+content:"✦";
+
+display:block;
+
+color:#d4af37;
+
+font-size:1.3rem;
+
+margin-top:8px;
 }
 
 .welcome-text{
@@ -1164,8 +1219,10 @@ gap:18px;
 justify-items:center;
 }
 
-.welcome-grid{
-grid-template-columns:1fr;
+.welcome-image{
+float:none;
+width:100%;
+margin:0 0 20px 0;
 }
 
 .welcome-image{
