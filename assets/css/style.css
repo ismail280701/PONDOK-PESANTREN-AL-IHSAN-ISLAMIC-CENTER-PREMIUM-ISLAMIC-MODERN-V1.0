@@ -220,7 +220,7 @@ object-fit:contain;
 .logo-text{
 font-weight:600;
 color:white;
-font-size:.9rem;
+font-size:65rem;
 line-height:1.2;
 }
 
@@ -595,7 +595,7 @@ FLOATING WHATSAPP
 .floating-wa{
 position:fixed;
 bottom:12px;
-right:18px;
+right:15px;
 z-index:999;
 transition:.3s ease;
 }
