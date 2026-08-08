@@ -890,13 +890,13 @@ MOBILE
 }
 
 .hero{
-padding:120px 20px 60px;
+padding:120px 20px 180px;
 margin-top:0;
 background-position:center center !important;
 display:flex;
 align-items:center;
 justify-content:center;
-height:600PX;
+height:auto;
 animation:none !important;
 transform:none !important;
 }
@@ -906,8 +906,9 @@ transform:translateY(-120px);
 }
 
 .explore{
-margin-top:-80px;
-background:transparent;
+margin-top:-120px;
+position:relative;
+z-index:10;
 }
     
 }
