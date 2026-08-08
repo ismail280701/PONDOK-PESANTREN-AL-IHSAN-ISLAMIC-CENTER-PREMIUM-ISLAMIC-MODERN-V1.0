@@ -1355,6 +1355,201 @@ transform:translateY(-4px);
 box-shadow:
 0 15px 35px rgba(31,107,79,.35);
 }
+/* =====================================
+CTA SECTION
+===================================== */
+
+.cta-section{
+
+margin-top:40px;
+
+padding:70px 30px;
+
+border-radius:30px;
+
+background:
+linear-gradient(
+135deg,
+#1f6b4f,
+#2d8a64
+);
+
+position:relative;
+
+overflow:hidden;
+
+text-align:center;
+
+color:white;
+}
+
+.cta-section::before{
+
+content:"";
+
+position:absolute;
+
+top:-100px;
+right:-100px;
+
+width:250px;
+height:250px;
+
+border-radius:50%;
+
+background:
+rgba(212,175,55,.12);
+}
+
+.cta-content{
+
+position:relative;
+z-index:2;
+}
+
+.cta-content h2{
+
+font-size:2.2rem;
+
+font-weight:800;
+
+margin-bottom:20px;
+}
+
+.cta-content p{
+
+max-width:800px;
+
+margin:auto;
+
+line-height:1.9;
+
+margin-bottom:30px;
+}
+
+.cta-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+background:#d4af37;
+
+color:white;
+
+font-weight:700;
+
+transition:.3s;
+}
+
+.cta-btn:hover{
+
+transform:translateY(-5px);
+
+background:#c79f22;
+}
+
+/* =====================================
+ALUR PENDAFTARAN
+===================================== */
+
+.alur-title{
+
+text-align:center;
+
+font-size:2rem;
+
+font-weight:800;
+
+color:#d4af37;
+
+margin-bottom:10px;
+}
+
+.alur-subtitle{
+
+text-align:center;
+
+margin-bottom:40px;
+
+color:#666;
+}
+
+.alur-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:30px;
+}
+
+.alur-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.08);
+
+text-align:center;
+}
+
+.alur-card h3{
+
+color:#1f6b4f;
+
+margin-bottom:25px;
+}
+
+.step{
+
+padding:12px;
+
+border-radius:12px;
+
+background:
+rgba(31,107,79,.05);
+
+font-weight:600;
+}
+
+.arrow{
+
+font-size:1.5rem;
+
+margin:10px 0;
+
+color:#d4af37;
+}
+
+.alur-btn{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:14px 30px;
+
+border-radius:50px;
+
+background:
+linear-gradient(
+135deg,
+#1f6b4f,
+#2d8a64
+);
+
+color:white;
+
+font-weight:700;
+}
 
 /* =====================================
 CONTENT SECTION
@@ -2070,6 +2265,19 @@ grid-template-columns:1fr;
 .why-button{
 
 text-align:center;
+}
+
+/* ===== CTA SECTION & ALUR PENDAFTARAN===== */
+.cta-content h2{
+font-size:1.7rem;
+}
+
+.alur-grid{
+grid-template-columns:1fr;
+}
+
+.alur-title{
+font-size:1.6rem;
 }
 }
 /* =====================================
