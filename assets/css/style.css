@@ -693,12 +693,12 @@ cursor:pointer;
 transition:.3s;
 }
 
-.read-more-btn{
-display:none;
+.read-more-btn:hover{
+transform:translateY(-3px);
 }
 
 .full-text{
-display:block !important;
+display:block;
 }
 
 /* =====================================
@@ -1252,14 +1252,6 @@ justify-content:center;
 
 .welcome-buttons img{
 width:160px;
-}
-
-.read-more-btn:hover{
-transform:translateY(-3px);
-}
-
-.full-text{
-display:block;
 }
 
 }
