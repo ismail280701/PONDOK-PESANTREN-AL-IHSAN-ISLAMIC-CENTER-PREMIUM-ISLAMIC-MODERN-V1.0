@@ -345,3 +345,39 @@ document
 observer.observe(el);
 
 });
+/* =========================================
+KATA PENGANTAR EKSTRAKURIKULER
+========================================= */
+
+function toggleExWelcome(button){
+
+const fullText =
+button.parentElement.parentElement.querySelector('.full-text');
+
+if(fullText.style.display === "block"){
+
+fullText.style.display = "none";
+
+button.innerHTML =
+"Baca Selengkapnya";
+
+window.scrollTo({
+
+top:
+document.getElementById("pengantar-ekstrakurikuler")
+.offsetTop - 90,
+
+behavior:"smooth"
+
+});
+
+}else{
+
+fullText.style.display = "block";
+
+button.innerHTML =
+"Tutup";
+
+}
+
+}
