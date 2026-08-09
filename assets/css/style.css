@@ -2627,7 +2627,8 @@ display:block !important;
 }
 
 .history-full{
-display:none !important;
+display:block !important;
+}
 
 }
 }
