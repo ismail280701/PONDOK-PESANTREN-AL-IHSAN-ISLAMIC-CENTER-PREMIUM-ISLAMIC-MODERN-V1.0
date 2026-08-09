@@ -2658,7 +2658,204 @@ PROGRAM UNGGULAN
     translateY(-4px)
     scale(1.03);
 }
+/* =========================================
+DETAIL PROGRAM
+========================================= */
 
+.detail-program-section{
+
+    padding:80px 0;
+
+}
+
+.detail-program-card{
+
+    background:#fff;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.06);
+
+    border:1px solid rgba(0,0,0,.05);
+
+}
+
+/* HEADER */
+
+.detail-program-header{
+
+    display:grid;
+
+    grid-template-columns:350px 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
+    margin-bottom:30px;
+
+}
+
+.detail-program-photo{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+}
+
+.detail-program-photo img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.detail-program-card:hover .detail-program-photo img{
+
+    transform:scale(1.05);
+
+}
+
+/* LABEL */
+
+.program-label{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:#eef8f2;
+
+    color:#1f6b4f;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+/* TITLE */
+
+.detail-program-intro h2{
+
+    color:#1f6b4f;
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+    font-weight:800;
+
+}
+
+/* PARAGRAF */
+
+.detail-program-intro p,
+.detail-program-content p{
+
+    color:#555;
+
+    line-height:1.9;
+
+}
+
+/* MATERIAL */
+
+.program-materials{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.material-item{
+
+    background:#f8faf8;
+
+    padding:15px 18px;
+
+    border-radius:15px;
+
+    border:1px solid #eee;
+
+    transition:.3s;
+
+}
+
+.material-item:hover{
+
+    transform:translateY(-3px);
+
+    border-color:#d4af37;
+
+}
+
+/* BUTTON */
+
+.program-action{
+
+    margin-top:35px;
+
+    text-align:center;
+
+}
+
+.detail-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    background:
+    linear-gradient(
+    135deg,
+    #d4af37,
+    #f3d57a
+    );
+
+    color:#222;
+
+    font-weight:700;
+
+    transition:.3s;
+
+    box-shadow:
+    0 10px 25px rgba(212,175,55,.25);
+
+}
+
+.detail-btn:hover{
+
+    transform:
+    translateY(-4px)
+    scale(1.03);
+
+}
 /* =====================================
 CONTENT SECTION
 ===================================== */
@@ -3733,6 +3930,40 @@ PROGRAM UNGGULAN HP
     width:100%;
 
     max-width:320px;
+
+    font-size:.9rem;
+}
+/* =========================================
+DETAIL PROGRAM HP
+========================================= */
+
+.detail-program-card{
+
+    padding:20px;
+
+}
+
+.detail-program-header{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+.detail-program-intro h2{
+
+    font-size:1.6rem;
+
+}
+
+.program-materials{
+
+    grid-template-columns:1fr;
+
+}
+
+.material-item{
 
     font-size:.9rem;
 
