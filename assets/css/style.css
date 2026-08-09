@@ -1618,10 +1618,39 @@ margin-bottom:40px;
 
 .history-wrapper{
 
-display:grid;
-grid-template-columns:380px 1fr;
-gap:35px;
-align-items:start;
+display:block;
+
+}
+
+.history-image{
+
+float:left;
+
+width:380px;
+
+margin-right:30px;
+
+margin-bottom:15px;
+
+}
+
+.history-image img{
+
+width:100%;
+
+border-radius:20px;
+
+display:block;
+
+}
+
+.history-wrapper::after{
+
+content:"";
+
+display:block;
+
+clear:both;
 
 }
 
@@ -2484,6 +2513,18 @@ SEJARAH PONDOK HP
 .history-wrapper{
 
 grid-template-columns:1fr;
+
+}
+
+.history-image{
+
+float:none;
+
+width:100%;
+
+margin-right:0;
+
+margin-bottom:20px;
 
 }
 
