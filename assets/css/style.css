@@ -2378,6 +2378,14 @@ padding:10px 14px;
 
 font-size:.75rem;
 }
+/* ===== FOTER PREMIUM ===== */
+.footer-section h3{
+margin-bottom:10px;
+}
+
+.footer-section a{
+padding:5px 0;
+}
 }
 /* =====================================
 SMALL MOBILE
