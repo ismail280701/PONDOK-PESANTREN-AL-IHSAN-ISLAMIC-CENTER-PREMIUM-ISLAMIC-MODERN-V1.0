@@ -2504,6 +2504,15 @@ PROGRAM UNGGULAN
     margin:25px 20px;
 
     font-weight:700;
+    display:flex;
+    flex-direction:column;
+
+    gap:2px;
+
+}
+.program-card h3 span{
+
+    font-weight:800;
 
 }
 
