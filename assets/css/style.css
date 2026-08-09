@@ -2532,7 +2532,7 @@ PROGRAM UNGGULAN
     rgba(212,175,55,.12),
     transparent
     );
-
+    pointer-events:none;
     opacity:0;
 
     transition:.4s;
