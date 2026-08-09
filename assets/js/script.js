@@ -171,24 +171,43 @@ window.addEventListener("scroll", () => {
     }
 
 });
+/* =====================================
+KATA PENGANTAR
+===================================== */
 
-function toggleWelcome(){
+function toggleWelcome(button){
 
-const text =
-document.querySelector('.full-text');
+const fullText =
+button.parentElement.querySelector('.full-text');
 
-const btn =
-document.querySelector('.read-more-btn');
+if(fullText.style.display === "block"){
 
-text.classList.toggle('show');
+fullText.style.display = "none";
 
-if(text.classList.contains('show')){
-btn.innerHTML='Tutup';
+button.innerHTML =
+"Baca Selengkapnya";
+
+window.scrollTo({
+
+top:
+document.getElementById("kata-pengantar")
+.offsetTop - 90,
+
+behavior:"smooth"
+
+});
+
 }else{
-btn.innerHTML='Baca Selengkapnya';
+
+fullText.style.display = "block";
+
+button.innerHTML =
+"Tutup";
+
 }
 
 }
+
 /* =====================================
 KEUNGGULAN PONDOK
 ===================================== */
