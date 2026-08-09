@@ -2442,20 +2442,16 @@ PROGRAM UNGGULAN
 /* CARD */
 
 .program-card{
-
     background:#fff;
-
     border-radius:28px;
-
     overflow:hidden;
-
     border:1px solid rgba(0,0,0,.05);
-
     box-shadow:
     0 10px 30px rgba(0,0,0,.06);
-
     transition:.4s ease;
-
+    position:relative;
+    animation-duration:.8s;
+    animation-fill-mode:both;
 }
 
 .program-card:hover{
@@ -2516,6 +2512,33 @@ PROGRAM UNGGULAN
 
 }
 
+.program-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(212,175,55,.08),
+    transparent
+    );
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.program-card:hover::before{
+
+    opacity:1;
+
+}
+
 /* BUTTON */
 
 .program-btn{
@@ -2538,19 +2561,57 @@ PROGRAM UNGGULAN
     #1f6b4f,
     #2d8a63
     );
-
     color:#fff;
-
     font-weight:600;
-
     transition:.3s;
+    white-space:nowrap;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.program-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.3),
+    transparent
+    );
+
+    transition:.6s;
+
+}
+
+.program-btn:hover::before{
+
+    left:100%;
 
 }
 
 .program-btn:hover{
 
     transform:translateY(-2px);
-
+    transform:
+    translateY(-3px)
+    scale(1.03);
 }
 
 /* FOOTER */
@@ -2592,10 +2653,12 @@ PROGRAM UNGGULAN
 }
 
 .education-btn:hover{
-
     transform:translateY(-3px);
-
+    transform:
+    translateY(-4px)
+    scale(1.03);
 }
+
 /* =====================================
 CONTENT SECTION
 ===================================== */
