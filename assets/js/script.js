@@ -175,10 +175,13 @@ window.addEventListener("scroll", () => {
 KATA PENGANTAR
 ===================================== */
 
-function toggleWelcome(button){
+function toggleWelcome(){
 
 const fullText =
-button.parentElement.querySelector('.full-text');
+document.querySelector('.full-text');
+
+const button =
+document.querySelector('.read-more-btn');
 
 if(fullText.style.display === "block"){
 
@@ -207,7 +210,6 @@ button.innerHTML =
 }
 
 }
-
 /* =====================================
 KEUNGGULAN PONDOK
 ===================================== */
