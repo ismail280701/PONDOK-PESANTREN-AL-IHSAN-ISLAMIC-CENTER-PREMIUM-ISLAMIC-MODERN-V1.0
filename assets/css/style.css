@@ -1860,6 +1860,43 @@ line-height:1.8;
 color:#444;
 
 }
+
+.vision-card ul{
+
+list-style:none;
+
+padding:0;
+margin:0;
+
+}
+
+.vision-card li{
+
+position:relative;
+
+padding-left:24px;
+
+margin-bottom:14px;
+
+line-height:1.7;
+
+}
+
+.vision-card li::before{
+
+content:"◆";
+
+position:absolute;
+
+left:0;
+
+color:#d4af37;
+
+font-size:.9rem;
+
+font-weight:bold;
+
+}
 /* =====================================
 CONTENT SECTION
 ===================================== */
@@ -2701,7 +2738,10 @@ VISI MISI HP
 
 .vision-grid{
 
-grid-template-columns:1fr;
+grid-template-columns:
+repeat(2,1fr);
+
+gap:15px;
 
 }
 
@@ -2713,21 +2753,21 @@ font-size:1.6rem;
 
 .vision-card{
 
-padding:25px;
+padding:18px;
 
 }
 
 .vision-icon{
 
-width:80px;
-height:80px;
+width:65px;
+height:65px;
 
 }
 
 .vision-icon img{
 
-width:50px;
-height:50px;
+width:38px;
+height:38px;
 
 }
 /* ===== FOTER PREMIUM ===== */
