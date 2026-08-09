@@ -271,6 +271,15 @@ fullText.style.display = "none";
 button.innerHTML =
 "Baca Selengkapnya";
 
+document
+.getElementById("sejarah-pondok")
+.scrollIntoView({
+
+behavior:"smooth",
+block:"start"
+
+});
+
 }else{
 
 fullText.style.display = "block";
