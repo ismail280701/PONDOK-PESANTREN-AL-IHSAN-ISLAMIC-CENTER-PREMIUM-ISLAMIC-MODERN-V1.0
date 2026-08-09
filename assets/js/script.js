@@ -259,8 +259,6 @@ content.scrollHeight + "px";
 JAVASCRIPT SEJARAH PONDOK
 ===================================== -->
 
-<script>
-
 function toggleHistory(button){
 
 const fullText =
@@ -283,5 +281,3 @@ button.innerHTML =
 }
 
 }
-
-</script>
