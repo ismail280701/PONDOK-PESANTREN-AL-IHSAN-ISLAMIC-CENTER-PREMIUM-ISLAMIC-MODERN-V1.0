@@ -2158,6 +2158,134 @@ color:#555;
 
 }
 /* =====================================
+CTA PROFIL
+===================================== */
+
+.cta-profile{
+
+background:
+linear-gradient(
+135deg,
+#1f6b4f,
+#2d8763
+);
+
+padding:60px 40px;
+
+border-radius:30px;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+box-shadow:
+0 15px 40px rgba(31,107,79,.20);
+
+}
+
+.cta-profile::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:4px;
+
+background:linear-gradient(
+90deg,
+#d4af37,
+#f7d774,
+#d4af37
+);
+
+}
+
+.cta-profile h2{
+
+color:white;
+
+font-size:2rem;
+
+margin-bottom:15px;
+
+font-weight:800;
+
+}
+
+.cta-profile p{
+
+color:
+rgba(255,255,255,.9);
+
+max-width:700px;
+
+margin:0 auto 30px;
+
+line-height:1.8;
+
+}
+
+.cta-profile-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.cta-program,
+.cta-daftar{
+
+padding:14px 28px;
+
+border-radius:999px;
+
+font-weight:700;
+
+text-decoration:none;
+
+transition:.3s ease;
+
+}
+
+.cta-program{
+
+background:white;
+
+color:#1f6b4f;
+
+}
+
+.cta-program:hover{
+
+transform:translateY(-4px);
+
+}
+
+.cta-daftar{
+
+background:#d4af37;
+
+color:white;
+
+}
+
+.cta-daftar:hover{
+
+transform:translateY(-4px);
+
+}
+/* =====================================
 CONTENT SECTION
 ===================================== */
 
@@ -3128,6 +3256,36 @@ margin-bottom:6px;
 font-size:.75rem;
 
 line-height:1.4;
+
+}
+/* =====================================
+CTA PROFIL HP
+===================================== */
+
+.cta-profile{
+
+padding:40px 20px;
+
+}
+
+.cta-profile h2{
+
+font-size:1.5rem;
+
+}
+
+.cta-profile-buttons{
+
+flex-direction:column;
+
+}
+
+.cta-program,
+.cta-daftar{
+
+width:100%;
+
+text-align:center;
 
 }
 /* ===== FOTER PREMIUM ===== */
