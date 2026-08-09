@@ -178,7 +178,7 @@ KATA PENGANTAR
 function toggleWelcome(button){
 
 const fullText =
-button.parentElement.querySelector('.full-text');
+button.parentElement.querySelector('.welcome-full');
 
 if(fullText.style.display === "block"){
 
