@@ -254,3 +254,34 @@ content.scrollHeight + "px";
 });
 
 });
+
+<!-- =====================================
+JAVASCRIPT SEJARAH PONDOK
+===================================== -->
+
+<script>
+
+function toggleHistory(button){
+
+const fullText =
+button.parentElement.querySelector('.history-full');
+
+if(fullText.style.display === "block"){
+
+fullText.style.display = "none";
+
+button.innerHTML =
+"Baca Selengkapnya";
+
+}else{
+
+fullText.style.display = "block";
+
+button.innerHTML =
+"Tutup";
+
+}
+
+}
+
+</script>
