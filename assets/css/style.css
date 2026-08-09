@@ -2856,6 +2856,251 @@ DETAIL PROGRAM
     scale(1.03);
 
 }
+/* =========================================
+TAHAPAN PENDIDIKAN
+========================================= */
+
+.education-section{
+
+padding:90px 0;
+
+}
+
+.education-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.education-card{
+
+background:#fff;
+
+padding:25px;
+
+border-radius:24px;
+
+border:1px solid rgba(0,0,0,.05);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.06);
+
+transition:.4s;
+
+}
+
+.education-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 20px 40px rgba(0,0,0,.10);
+
+}
+
+.education-level{
+
+display:inline-block;
+
+padding:8px 16px;
+
+border-radius:999px;
+
+background:#eef8f2;
+
+color:#1f6b4f;
+
+font-size:.8rem;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.education-card h3{
+
+color:#1f6b4f;
+
+margin-bottom:15px;
+
+font-size:1.3rem;
+
+}
+
+.education-card ul{
+
+padding:0;
+
+margin:0;
+
+list-style:none;
+
+}
+
+.education-card li{
+
+padding:8px 0;
+
+line-height:1.7;
+
+color:#555;
+
+}
+
+.education-final{
+
+border:2px solid #d4af37;
+
+}
+/* =========================================
+CTA PENDAFTARAN
+========================================= */
+
+.cta-section{
+
+padding:100px 0;
+
+}
+
+.cta-box{
+
+text-align:center;
+
+padding:60px 40px;
+
+border-radius:32px;
+
+background:
+
+linear-gradient(
+135deg,
+#1f6b4f,
+#2d8a63
+);
+
+color:#fff;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.cta-badge{
+
+display:inline-block;
+
+padding:10px 20px;
+
+border-radius:999px;
+
+background:
+rgba(255,255,255,.15);
+
+backdrop-filter:blur(10px);
+
+margin-bottom:20px;
+
+font-size:.85rem;
+
+font-weight:600;
+
+}
+
+.cta-box h2{
+
+font-size:2.3rem;
+
+margin-bottom:20px;
+
+font-weight:800;
+
+}
+
+.cta-box p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.9;
+
+opacity:.95;
+
+}
+
+.cta-buttons{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.cta-primary{
+
+padding:15px 30px;
+
+border-radius:999px;
+
+background:#d4af37;
+
+color:#222;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.cta-primary:hover{
+
+transform:
+translateY(-4px)
+scale(1.03);
+
+}
+
+.cta-secondary{
+
+padding:15px 30px;
+
+border-radius:999px;
+
+border:1px solid rgba(255,255,255,.3);
+
+color:#fff;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.cta-secondary:hover{
+
+background:
+rgba(255,255,255,.1);
+
+}
 /* =====================================
 CONTENT SECTION
 ===================================== */
@@ -3966,6 +4211,82 @@ DETAIL PROGRAM HP
 .material-item{
 
     font-size:.9rem;
+
+}
+/* =========================================
+TAHAPAN PENDIDIKAN HP
+========================================= */
+
+@media(max-width:768px){
+
+.education-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:15px;
+
+}
+
+.education-card{
+
+padding:18px;
+
+}
+
+.education-card h3{
+
+font-size:1rem;
+
+}
+
+.education-card li{
+
+font-size:.8rem;
+
+line-height:1.5;
+
+}
+
+}
+/* =========================================
+CTA PENDAFTARAN HP
+========================================= */
+
+@media(max-width:768px){
+
+.cta-box{
+
+padding:40px 25px;
+
+}
+
+.cta-box h2{
+
+font-size:1.6rem;
+
+}
+
+.cta-box p{
+
+font-size:.9rem;
+
+}
+
+.cta-buttons{
+
+flex-direction:column;
+
+}
+
+.cta-primary,
+.cta-secondary{
+
+width:100%;
+
+text-align:center;
+
+}
 
 }
 /* ===== FOTER PREMIUM ===== */
