@@ -235,6 +235,33 @@ transform:translateY(-4px);
 box-shadow:
 0 12px 24px rgba(212,175,55,.35);
 }
+
+
+@media(min-width:992px){
+
+.ex-program-image{
+height:130px;
+}
+
+.ex-program-card h3{
+font-size:.95rem;
+padding:14px 12px 8px;
+}
+
+.ex-program-card p{
+font-size:.8rem;
+line-height:1.5;
+padding:0 12px;
+min-height:70px;
+}
+
+.ex-program-btn{
+font-size:.75rem;
+padding:8px 10px;
+margin:12px;
+}
+
+}
 /* =========================================
 DETAIL PROGRAM EKSTRAKURIKULER
 ========================================= */
