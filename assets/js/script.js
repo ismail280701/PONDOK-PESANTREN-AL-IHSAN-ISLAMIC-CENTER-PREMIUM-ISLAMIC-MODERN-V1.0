@@ -407,3 +407,34 @@ function toggleDakwahIntro() {
     }
 
 }
+/* =========================================
+BACA SELENGKAPNYA GALERI
+========================================= */
+
+document
+.querySelectorAll(".gallery-readmore-btn")
+.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+const wrapper =
+button.parentElement
+.querySelector(".gallery-text-wrapper");
+
+wrapper.classList.toggle("active");
+
+if(wrapper.classList.contains("active")){
+
+button.textContent =
+"Tutup";
+
+}else{
+
+button.textContent =
+"Baca Selengkapnya";
+
+}
+
+});
+
+});
