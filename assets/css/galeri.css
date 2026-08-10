@@ -211,6 +211,20 @@ color:#222;
 
 border:none;
 
+}/* =========================================
+PERBAIKAN WARNA CTA GALLERY
+========================================= */
+
+.cta-section h2{
+color:#ffffff !important;
+}
+
+.cta-section p{
+color:rgba(255,255,255,.95) !important;
+}
+
+.cta-section .cta-badge{
+color:#ffffff !important;
 }
 /* =========================================
 KATA PENGANTAR GALERI HP
@@ -265,7 +279,7 @@ display:inline-flex;
 
 }
 /* =========================================
-GRID GALERI PREMIUM
+GRID GALERI PREMIUM HP
 ========================================= */
 
 .gallery-grid{
