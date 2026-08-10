@@ -143,13 +143,28 @@ line-height:1.8;
 
 .intro-more{
 
-display:none;
+max-height:0;
+
+overflow:hidden;
+
+opacity:0;
+
+transform:translateY(-10px);
+
+transition:
+max-height .5s ease,
+opacity .4s ease,
+transform .4s ease;
 
 }
 
 .intro-more.active{
 
-display:block;
+max-height:600px;
+
+opacity:1;
+
+transform:translateY(0);
 
 }
 
