@@ -494,15 +494,20 @@ document.getElementById("ppdbMoreContent");
 const button =
 document.querySelector(".ppdb-readmore-btn");
 
+const text =
+button.querySelector(".btn-text");
+
 content.classList.toggle("active");
+
+button.classList.toggle("active");
 
 if(content.classList.contains("active")){
 
-button.textContent = "Tutup";
+text.textContent = "Tutup";
 
 }else{
 
-button.textContent = "Baca Selengkapnya";
+text.textContent = "Baca Selengkapnya";
 
 }
 
