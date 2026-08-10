@@ -344,16 +344,16 @@ gap:15px;
 }
 
 .ex-program-grid-bottom{
-grid-template-columns:
-repeat(2,1fr);
+grid-template-columns:repeat(2,1fr);
 max-width:100%;
 margin-top:15px;
-display:contents;
+display:gride;
+marin-top:15px;
+grid-column:span 2;
 }
 
 .ex-program-card:last-child{
-grid-column:
-span 2;
+grid-column:span 2;
 }
 
 .ex-program-image{
@@ -385,7 +385,7 @@ max-width:320px;
 
 }
 /* =========================================
-RESPONSIVE HP
+DETAIL PROGRAM EKSTRAKURIKULER RESPONSIVE HP
 ========================================= */
 
 @media(max-width:768px){
