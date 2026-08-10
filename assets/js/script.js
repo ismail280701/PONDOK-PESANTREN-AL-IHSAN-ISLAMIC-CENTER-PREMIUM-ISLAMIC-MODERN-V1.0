@@ -381,3 +381,29 @@ button.innerHTML =
 }
 
 }
+
+/* =========================================
+BACA SELENGKAPNYA KATA PENGANTAR PROGRAM DAKWAH
+========================================= */
+
+function toggleDakwahIntro() {
+
+    const content =
+    document.getElementById("dakwahMore");
+
+    const button =
+    document.querySelector(".intro-toggle-btn");
+
+    content.classList.toggle("active");
+
+    if (content.classList.contains("active")) {
+
+        button.textContent = "Tutup";
+
+    } else {
+
+        button.textContent = "Baca Selengkapnya";
+
+    }
+
+}
