@@ -136,15 +136,34 @@ line-height:1.8;
 
 }
 
+/* =========================================
+ANIMASI BACA SELENGKAPNYA PPDB
+========================================= */
+
 .ppdb-more-content{
 
-display:none;
+max-height:0;
+
+overflow:hidden;
+
+opacity:0;
+
+transform:translateY(-10px);
+
+transition:
+max-height .6s ease,
+opacity .4s ease,
+transform .4s ease;
 
 }
 
 .ppdb-more-content.active{
 
-display:block;
+max-height:500px;
+
+opacity:1;
+
+transform:translateY(0);
 
 }
 
@@ -181,9 +200,69 @@ transition:.3s;
 
 }
 
+.ppdb-readmore-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:8px;
+
+margin-top:10px;
+
+padding:12px 22px;
+
+border:none;
+
+border-radius:999px;
+
+background:
+linear-gradient(
+135deg,
+#d4af37,
+#f4d06f
+);
+
+color:#222;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.35s ease;
+
+}
+
+.ppdb-readmore-btn:hover{
+
+transform:
+translateY(-3px);
+
+box-shadow:
+0 10px 20px
+rgba(212,175,55,.35);
+
+}
+
 .ppdb-readmore-btn:hover{
 
 transform:translateY(-2px);
+
+}
+
+.btn-arrow{
+
+transition:.4s ease;
+
+display:inline-block;
+
+}
+
+.ppdb-readmore-btn.active .btn-arrow{
+
+transform:rotate(180deg);
 
 }
 
