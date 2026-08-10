@@ -239,6 +239,37 @@ box-shadow:
 0 12px 24px rgba(212,175,55,.35);
 }
 
+.ex-title{
+font-size:clamp(2rem,4vw,3.2rem);
+font-weight:800;
+color:#1f6b4f;
+line-height:1.2;
+margin-bottom:15px;
+}
+
+.ex-subtitle{
+max-width:760px;
+margin:auto;
+font-size:1.05rem;
+line-height:1.9;
+color:#666;
+}
+
+.ex-title::after{
+content:"";
+display:block;
+width:90px;
+height:4px;
+margin:18px auto 0;
+border-radius:999px;
+background:
+linear-gradient(
+90deg,
+#d4af37,
+#f4d06f
+);
+
+}
 
 @media(min-width:992px){
 
