@@ -483,3 +483,27 @@ item.style.display="none";
 });
 
 });
+/* =========================================
+BACA SELENGKAPNYA KATA PENGANTAR PPDB
+========================================= */
+function togglePPDBIntro(){
+
+const content =
+document.getElementById("ppdbMoreContent");
+
+const button =
+document.querySelector(".ppdb-readmore-btn");
+
+content.classList.toggle("active");
+
+if(content.classList.contains("active")){
+
+button.textContent = "Tutup";
+
+}else{
+
+button.textContent = "Baca Selengkapnya";
+
+}
+
+}
