@@ -265,7 +265,9 @@ margin:0 0 20px 0;
 PROGRAM UNGGULAN EKSTRAKURIKULER HP
 ========================================= */
 @media(max-width:768px){
+
 .ex-program-grid{
+display:rid;
 grid-template-columns:
 repeat(2,1fr);
 gap:15px;
@@ -276,6 +278,7 @@ grid-template-columns:
 repeat(2,1fr);
 max-width:100%;
 margin-top:15px;
+display:contents;
 }
 
 .ex-program-card:last-child{
