@@ -443,6 +443,14 @@ MENU AKTIF MOBILE
 
 .mobile-menu a.active{
 
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
 background:
 linear-gradient(
 135deg,
@@ -455,6 +463,8 @@ color:#1f6b4f;
 font-weight:700;
 
 border-radius:12px;
+
+padding:12px 16px;
 
 box-shadow:
 0 4px 15px rgba(212,175,55,.35);
@@ -502,13 +512,12 @@ left:-300px;
 
 width:280px;
 height:100vh;
-
 background:
-linear-gradient(
-180deg,
-#ffffff,
-#f6fbf8
-);
+rgba(15,77,57,.96);
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
 
 box-shadow:var(--shadow-lg);
 
@@ -529,6 +538,10 @@ padding:14px 0;
 color:var(--primary);
 font-weight:600;
 border-bottom:1px solid #eee;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
 /* =====================================
