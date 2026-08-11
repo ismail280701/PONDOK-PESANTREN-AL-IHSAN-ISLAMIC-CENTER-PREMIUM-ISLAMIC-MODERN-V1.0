@@ -154,11 +154,30 @@ function toggleWA(){
     const waList =
         document.getElementById("waList");
 
-    if(waList){
+    const waOverlay =
+        document.getElementById("waOverlay");
 
-        waList.classList.toggle("active");
+    if(!waList) return;
 
-    }
+    waList.classList.toggle("active");
+
+    waOverlay.classList.toggle("active");
+
+}
+
+function closeWA(){
+
+    const waList =
+        document.getElementById("waList");
+
+    const waOverlay =
+        document.getElementById("waOverlay");
+
+    if(!waList) return;
+
+    waList.classList.remove("active");
+
+    waOverlay.classList.remove("active");
 
 }
 
