@@ -562,6 +562,32 @@ background-size:cover !important;
 background-position:center center !important;
 background-repeat:no-repeat !important;
 padding-top:100px;
+animation:
+heroFloat 18s ease-in-out infinite;
+}
+@keyframes heroFloat{
+
+0%{
+
+background-position:
+center center;
+
+}
+
+50%{
+
+background-position:
+center 55%;
+
+}
+
+100%{
+
+background-position:
+center center;
+
+}
+
 }
 
 .hero::before{
