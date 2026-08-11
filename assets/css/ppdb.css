@@ -398,6 +398,212 @@ box-shadow:
 
 }
 /* =========================================
+PERSYARATAN PENDAFTARAN
+========================================= */
+
+.ppdb-syarat-section{
+padding:90px 0;
+}
+
+.ppdb-syarat-section h2{
+color:#1f6b4f;
+}
+
+.ppdb-syarat-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.ppdb-syarat-card{
+
+background:#fff;
+
+border-radius:30px;
+
+padding:35px;
+
+border:1px solid rgba(0,0,0,.05);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.06);
+
+position:relative;
+
+overflow:hidden;
+
+transition:.4s ease;
+
+}
+
+/* GOLD OVERLAY */
+
+.ppdb-syarat-card::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+135deg,
+rgba(212,175,55,.10),
+transparent
+);
+
+opacity:0;
+
+transition:.4s;
+
+pointer-events:none;
+
+}
+
+/* SHINE EFFECT */
+
+.ppdb-syarat-card::after{
+
+content:"";
+
+position:absolute;
+
+top:-120%;
+
+left:-60%;
+
+width:60%;
+
+height:300%;
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.45),
+transparent
+);
+
+transform:rotate(25deg);
+
+transition:.8s ease;
+
+pointer-events:none;
+
+}
+
+.ppdb-syarat-card:hover{
+
+transform:
+translateY(-10px);
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.ppdb-syarat-card:hover::before{
+
+opacity:1;
+
+}
+
+.ppdb-syarat-card:hover::after{
+
+left:130%;
+
+}
+
+.ppdb-syarat-card h3{
+
+font-size:1.4rem;
+
+font-weight:800;
+
+color:#1f6b4f;
+
+margin-bottom:25px;
+
+text-align:center;
+
+}
+
+.ppdb-syarat-card ul{
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+.ppdb-syarat-card li{
+
+position:relative;
+
+padding-left:42px;
+
+margin-bottom:18px;
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+/* CHECKLIST */
+
+.ppdb-syarat-card li::before{
+
+content:"✓";
+
+position:absolute;
+
+left:0;
+
+top:2px;
+
+width:26px;
+
+height:26px;
+
+border-radius:50%;
+
+background:#1f6b4f;
+
+color:#fff;
+
+font-size:.85rem;
+
+font-weight:700;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+transition:.3s ease;
+
+}
+
+.ppdb-syarat-card:hover li::before{
+
+transform:scale(1.08);
+
+}
+/* =========================================
 KATA PENGANTAR PPDB HP
 ========================================= */
 
@@ -614,6 +820,41 @@ font-size:.75rem;
 padding:10px;
 
 margin:15px 10px;
+
+}
+/* =========================================
+PERSYARATAN PENDAFTARAN HP
+========================================= */
+
+@media(max-width:768px){
+
+.ppdb-syarat-grid{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.ppdb-syarat-card{
+
+padding:25px;
+
+}
+
+.ppdb-syarat-card h3{
+
+font-size:1.2rem;
+
+}
+
+.ppdb-syarat-card li{
+
+font-size:.92rem;
+
+line-height:1.7;
+
+}
 
 }
 }
