@@ -371,7 +371,7 @@ HERO SECTION
 ===================================== */
 
 .hero{
-min-height:70dvh;
+min-height:700px;
 height:auto;
 position:relative;
 display:flex;
@@ -3581,7 +3581,7 @@ font-size:.85rem;
 }
 
 .hero{
-min-height:700dvh;
+min-height:700px;
 overflow:hidden;
 }
 
