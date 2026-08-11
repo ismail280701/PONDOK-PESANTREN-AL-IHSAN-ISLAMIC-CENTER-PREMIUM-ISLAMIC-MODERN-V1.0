@@ -575,3 +575,48 @@ text.textContent = "Baca Selengkapnya";
 }
 
 }
+
+/* =========================================
+BACA SELENGKAPNYA LOKASI
+========================================= */
+
+const lokasiBtn =
+document.getElementById(
+'lokasiReadMoreBtn'
+);
+
+const lokasiText =
+document.getElementById(
+'lokasiIntroText'
+);
+
+if(lokasiBtn){
+
+lokasiBtn.addEventListener(
+'click',
+
+function(){
+
+lokasiText.classList.toggle(
+'active'
+);
+
+if(
+lokasiText.classList.contains(
+'active'
+)
+){
+
+lokasiBtn.textContent =
+'Baca Lebih Sedikit';
+
+}else{
+
+lokasiBtn.textContent =
+'Baca Selengkapnya';
+
+}
+
+});
+
+}
