@@ -101,6 +101,11 @@ display:none;
 /* =========================================
 PROGRAM PENDIDIKAN SANTRI
 ========================================= */
+.ppdb-program-section h2{
+
+color:#1f6b4f;
+
+}
 
 .ppdb-program-section{
 padding:90px 0;
