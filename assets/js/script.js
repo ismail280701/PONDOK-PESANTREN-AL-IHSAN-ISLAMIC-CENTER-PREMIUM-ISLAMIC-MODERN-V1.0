@@ -311,6 +311,36 @@ currentCard.classList.toggle('active');
 });
 
 });
+/* =========================================
+ACCORDION FAQ PPDB
+========================================= */
+
+document
+.querySelectorAll('.ppdb-faq-question')
+.forEach(button => {
+
+button.addEventListener('click', () => {
+
+const currentItem =
+button.parentElement;
+
+document
+.querySelectorAll('.ppdb-faq-item')
+.forEach(item => {
+
+if(item !== currentItem){
+
+item.classList.remove('active');
+
+}
+
+});
+
+currentItem.classList.toggle('active');
+
+});
+
+});
 /*-- =====================================
 JAVASCRIPT SEJARAH PONDOK
 ===================================== --*/
