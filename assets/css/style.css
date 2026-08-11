@@ -671,6 +671,63 @@ transition:0.3s;
 .row-bottom img:hover{
 transform:translateY(-3px);
 }
+/* =====================================
+JELAJAHI WEBSITE PANAH
+===================================== */
+
+.hero-explore{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.explore-link{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:8px;
+
+color:white;
+
+font-size:.95rem;
+
+font-weight:600;
+
+letter-spacing:.5px;
+
+text-decoration:none;
+
+transition:.3s ease;
+
+}
+
+.explore-link:hover{
+
+transform:translateY(-3px);
+
+}
+
+.explore-arrow{
+
+font-size:1.8rem;
+
+color:#f7d774;
+
+animation:
+arrowFloat 2s ease-in-out infinite;
+
+text-shadow:
+0 0 15px rgba(247,215,116,.5);
+
+}
 @keyframes arrowFloat{
 
 0%{
