@@ -671,7 +671,21 @@ transition:0.3s;
 .row-bottom img:hover{
 transform:translateY(-3px);
 }
+@keyframes arrowFloat{
 
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(8px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
 /* =====================================
 JELAJAHI WEBSITE
 ===================================== */
