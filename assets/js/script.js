@@ -277,7 +277,40 @@ content.scrollHeight + "px";
 });
 
 });
+/* =========================================
+ACCORDION BIAYA PENDIDIKAN
+========================================= */
 
+document
+.querySelectorAll('.ppdb-biaya-header')
+.forEach(button => {
+
+button.addEventListener('click', () => {
+
+const currentCard =
+button.parentElement;
+
+/* tutup card lain */
+
+document
+.querySelectorAll('.ppdb-biaya-card')
+.forEach(card => {
+
+if(card !== currentCard){
+
+card.classList.remove('active');
+
+}
+
+});
+
+/* buka card yang diklik */
+
+currentCard.classList.toggle('active');
+
+});
+
+});
 /*-- =====================================
 JAVASCRIPT SEJARAH PONDOK
 ===================================== --*/
