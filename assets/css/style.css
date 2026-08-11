@@ -122,6 +122,16 @@ list-style:none;
 .hidden{
 display:none;
 }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,
+body{
+overflow-x:hidden;
+}
 
 /* =====================================
 LOADING SCREEN
@@ -4601,10 +4611,4 @@ display:block !important;
 display:block !important;
 }
 
-}
-/* kode terakhir */
-
-html,
-body{
-overflow-x:hidden;
 }
