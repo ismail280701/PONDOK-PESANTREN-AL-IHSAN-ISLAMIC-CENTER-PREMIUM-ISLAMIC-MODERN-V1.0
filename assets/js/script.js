@@ -24,12 +24,38 @@ function toggleMenu() {
     const mobileMenu =
         document.getElementById("mobileMenu");
 
-    if(mobileMenu){
-        mobileMenu.classList.toggle("active");
-    }
+    const menuToggle =
+        document.querySelector(".menu-toggle");
+
+    const overlay =
+        document.getElementById("menuOverlay");
+
+    mobileMenu.classList.toggle("active");
+
+    menuToggle.classList.toggle("active");
+
+    overlay.classList.toggle("active");
 
 }
 
+function closeMenu(){
+
+    const mobileMenu =
+        document.getElementById("mobileMenu");
+
+    const menuToggle =
+        document.querySelector(".menu-toggle");
+
+    const overlay =
+        document.getElementById("menuOverlay");
+
+    mobileMenu.classList.remove("active");
+
+    menuToggle.classList.remove("active");
+
+    overlay.classList.remove("active");
+
+}
 
 /* =====================================
    STICKY HEADER
