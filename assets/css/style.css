@@ -4602,4 +4602,9 @@ display:block !important;
 }
 
 }
+/* kode terakhir */
+
+html,
+body{
+overflow-x:hidden;
 }
