@@ -1065,6 +1065,125 @@ text-align:center;
 
 }
 /* =========================================
+INFORMASI YANG SERING DITANYAKAN
+========================================= */
+
+.ppdb-faq-section{
+padding:90px 0;
+}
+
+.ppdb-faq-section h2{
+color:#1f6b4f;
+}
+
+.ppdb-faq-wrapper{
+margin-top:50px;
+}
+
+.ppdb-faq-item{
+
+background:#fff;
+
+border-radius:24px;
+
+margin-bottom:18px;
+
+overflow:hidden;
+
+border:1px solid rgba(0,0,0,.05);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.06);
+
+transition:.4s ease;
+
+position:relative;
+
+}
+
+.ppdb-faq-item:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.10);
+
+}
+
+.ppdb-faq-question{
+
+width:100%;
+
+background:none;
+
+border:none;
+
+padding:24px 28px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+cursor:pointer;
+
+text-align:left;
+
+font-size:1rem;
+
+font-weight:700;
+
+color:#1f6b4f;
+
+}
+
+.ppdb-faq-question i{
+
+font-style:normal;
+
+transition:.4s ease;
+
+}
+
+.ppdb-faq-item.active i{
+
+transform:rotate(180deg);
+
+}
+
+.ppdb-faq-answer{
+
+max-height:0;
+
+overflow:hidden;
+
+padding:0 28px;
+
+transition:
+max-height .5s ease,
+padding .4s ease;
+
+}
+
+.ppdb-faq-item.active .ppdb-faq-answer{
+
+max-height:300px;
+
+padding:0 28px 24px;
+
+}
+
+.ppdb-faq-answer p{
+
+line-height:1.8;
+
+color:#666;
+
+margin:0;
+
+}
+/* =========================================
 KATA PENGANTAR PPDB HP
 ========================================= */
 
@@ -1371,6 +1490,28 @@ font-size:1.05rem;
 .ppdb-biaya-note{
 
 font-size:.9rem;
+
+}
+/* =========================================
+FAQ HP
+========================================= */
+.ppdb-faq-question{
+
+padding:20px;
+
+font-size:.95rem;
+
+}
+
+.ppdb-faq-answer{
+
+padding:0 20px;
+
+}
+
+.ppdb-faq-item.active .ppdb-faq-answer{
+
+padding:0 20px 20px;
 
 }
 
