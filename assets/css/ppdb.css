@@ -1182,6 +1182,222 @@ color:#666;
 
 margin:0;
 
+}/* =========================================
+CTA PPDB
+========================================= */
+
+.ppdb-cta-section{
+
+padding:90px 0;
+
+}
+
+.ppdb-cta-box{
+
+background:
+linear-gradient(
+135deg,
+#1f6b4f,
+#2d8a64
+);
+
+padding:70px 40px;
+
+border-radius:35px;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+color:#fff;
+
+box-shadow:
+0 20px 50px rgba(31,107,79,.25);
+
+}
+
+/* EFFECT */
+
+.ppdb-cta-box::before{
+
+content:"";
+
+position:absolute;
+
+width:300px;
+
+height:300px;
+
+background:
+rgba(212,175,55,.12);
+
+border-radius:50%;
+
+top:-120px;
+
+right:-100px;
+
+filter:blur(20px);
+
+}
+
+.ppdb-cta-box::after{
+
+content:"";
+
+position:absolute;
+
+width:250px;
+
+height:250px;
+
+background:
+rgba(255,255,255,.05);
+
+border-radius:50%;
+
+bottom:-120px;
+
+left:-80px;
+
+filter:blur(25px);
+
+}
+
+.ppdb-cta-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+border-radius:999px;
+
+background:
+rgba(255,255,255,.15);
+
+backdrop-filter:blur(10px);
+
+font-size:.9rem;
+
+font-weight:700;
+
+margin-bottom:25px;
+
+}
+
+.ppdb-cta-box h2{
+
+font-size:2.2rem;
+
+font-weight:800;
+
+line-height:1.4;
+
+margin-bottom:20px;
+
+color:#fff;
+
+}
+
+.ppdb-cta-box p{
+
+max-width:850px;
+
+margin:auto;
+
+line-height:1.9;
+
+opacity:.95;
+
+margin-bottom:40px;
+
+}
+
+/* BUTTONS */
+
+.ppdb-cta-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.ppdb-cta-primary,
+.ppdb-cta-secondary,
+.ppdb-cta-location{
+
+padding:15px 28px;
+
+border-radius:999px;
+
+font-weight:700;
+
+text-decoration:none;
+
+transition:.35s ease;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+min-width:200px;
+
+}
+
+/* DAFTAR */
+
+.ppdb-cta-primary{
+
+background:
+linear-gradient(
+135deg,
+#d4af37,
+#f4d06f
+);
+
+color:#222;
+
+}
+
+/* WA */
+
+.ppdb-cta-secondary{
+
+background:
+rgba(255,255,255,.15);
+
+color:#fff;
+
+border:1px solid rgba(255,255,255,.2);
+
+}
+
+/* MAPS */
+
+.ppdb-cta-location{
+
+background:#fff;
+
+color:#1f6b4f;
+
+}
+
+.ppdb-cta-primary:hover,
+.ppdb-cta-secondary:hover,
+.ppdb-cta-location:hover{
+
+transform:
+translateY(-5px);
+
 }
 /* =========================================
 KATA PENGANTAR PPDB HP
@@ -1512,6 +1728,35 @@ padding:0 20px;
 .ppdb-faq-item.active .ppdb-faq-answer{
 
 padding:0 20px 20px;
+
+}
+/* =========================================
+CTA PPDB HP
+========================================= */
+
+.ppdb-cta-box{
+
+padding:50px 25px;
+
+}
+
+.ppdb-cta-box h2{
+
+font-size:1.6rem;
+
+}
+
+.ppdb-cta-buttons{
+
+flex-direction:column;
+
+}
+
+.ppdb-cta-primary,
+.ppdb-cta-secondary,
+.ppdb-cta-location{
+
+width:100%;
 
 }
 
