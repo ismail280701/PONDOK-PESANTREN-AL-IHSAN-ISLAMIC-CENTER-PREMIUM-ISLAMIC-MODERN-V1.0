@@ -417,6 +417,27 @@ position:relative;
 padding:8px 14px;
 border-radius:999px;
 }
+/* =====================================
+MENU AKTIF
+===================================== */
+
+.nav-menu a.active{
+
+background:
+linear-gradient(
+135deg,
+#d4af37,
+#f7d774
+);
+
+color:#1f6b4f;
+
+font-weight:700;
+
+box-shadow:
+0 4px 15px rgba(212,175,55,.35);
+
+}
 
 header.scrolled .nav-menu a{
 color:white;
