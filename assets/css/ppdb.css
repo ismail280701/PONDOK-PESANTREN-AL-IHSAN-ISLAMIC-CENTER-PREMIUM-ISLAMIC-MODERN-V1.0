@@ -859,6 +859,212 @@ transform:translateY(-3px);
 
 }
 /* =========================================
+BIAYA PENDIDIKAN
+========================================= */
+
+.ppdb-biaya-section{
+padding:90px 0;
+}
+
+.ppdb-biaya-section h2{
+color:#1f6b4f;
+}
+
+.ppdb-biaya-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.ppdb-biaya-card{
+
+background:#fff;
+
+border-radius:28px;
+
+overflow:hidden;
+
+border:1px solid rgba(0,0,0,.05);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.06);
+
+transition:.4s ease;
+
+position:relative;
+
+}
+
+.ppdb-biaya-card::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+linear-gradient(
+135deg,
+rgba(212,175,55,.10),
+transparent
+);
+
+opacity:0;
+
+transition:.4s;
+
+pointer-events:none;
+
+}
+
+.ppdb-biaya-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.ppdb-biaya-card:hover::before{
+
+opacity:1;
+
+}
+
+.ppdb-biaya-header{
+
+width:100%;
+
+background:none;
+
+border:none;
+
+padding:25px;
+
+cursor:pointer;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+text-align:left;
+
+}
+
+.ppdb-biaya-header h3{
+
+margin:0;
+
+color:#1f6b4f;
+
+font-size:1.2rem;
+
+font-weight:700;
+
+}
+
+.ppdb-biaya-header span{
+
+display:block;
+
+margin-top:5px;
+
+color:#d4af37;
+
+font-weight:700;
+
+}
+
+.ppdb-biaya-header i{
+
+font-style:normal;
+
+font-size:1.1rem;
+
+color:#1f6b4f;
+
+transition:.4s;
+
+}
+
+.ppdb-biaya-card.active i{
+
+transform:rotate(180deg);
+
+}
+
+.ppdb-biaya-content{
+
+max-height:0;
+
+overflow:hidden;
+
+transition:
+max-height .5s ease,
+padding .4s ease;
+
+padding:0 25px;
+
+}
+
+.ppdb-biaya-card.active .ppdb-biaya-content{
+
+max-height:500px;
+
+padding:0 25px 25px;
+
+}
+
+.ppdb-biaya-content p{
+
+color:#666;
+
+line-height:1.8;
+
+margin-bottom:15px;
+
+}
+
+.ppdb-biaya-content ul{
+
+padding-left:20px;
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+.ppdb-biaya-note{
+
+margin-top:35px;
+
+padding:20px;
+
+background:
+rgba(31,107,79,.08);
+
+border-radius:20px;
+
+color:#555;
+
+line-height:1.8;
+
+text-align:center;
+
+}
+/* =========================================
 KATA PENGANTAR PPDB HP
 ========================================= */
 
@@ -1138,6 +1344,34 @@ font-size:1.2rem;
 font-size:.92rem;
 
 }
+/* =========================================
+BIAYA PENDIDIKAN HP
+========================================= */
 
+.ppdb-biaya-grid{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.ppdb-biaya-header{
+
+padding:20px;
+
+}
+
+.ppdb-biaya-header h3{
+
+font-size:1.05rem;
+
+}
+
+.ppdb-biaya-note{
+
+font-size:.9rem;
+
+}
 
 }
