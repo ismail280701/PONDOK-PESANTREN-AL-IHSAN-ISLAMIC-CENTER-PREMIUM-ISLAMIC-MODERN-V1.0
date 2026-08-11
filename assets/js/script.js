@@ -582,38 +582,51 @@ BACA SELENGKAPNYA LOKASI
 
 const lokasiBtn =
 document.getElementById(
-'lokasiReadMoreBtn'
+"lokasiReadMoreBtn"
 );
 
 const lokasiText =
 document.getElementById(
-'lokasiIntroText'
+"lokasiText"
+);
+
+const lokasiArrow =
+document.getElementById(
+"lokasiArrow"
 );
 
 if(lokasiBtn){
 
 lokasiBtn.addEventListener(
-'click',
+"click",
 
 function(){
 
 lokasiText.classList.toggle(
-'active'
+"active"
+);
+
+lokasiArrow.classList.toggle(
+"rotate"
 );
 
 if(
 lokasiText.classList.contains(
-'active'
+"active"
 )
 ){
 
-lokasiBtn.textContent =
-'Baca Lebih Sedikit';
+lokasiBtn.querySelector(
+"span"
+).textContent =
+"Baca Lebih Sedikit";
 
 }else{
 
-lokasiBtn.textContent =
-'Baca Selengkapnya';
+lokasiBtn.querySelector(
+"span"
+).textContent =
+"Baca Selengkapnya";
 
 }
 
