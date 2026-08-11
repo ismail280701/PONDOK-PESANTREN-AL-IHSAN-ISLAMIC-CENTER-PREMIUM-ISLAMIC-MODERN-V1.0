@@ -91,7 +91,6 @@ font-weight:700;
 box-shadow:
 0 5px 15px rgba(212,175,55,.35);
 }
-
 /* =====================================
 GLOBAL
 ===================================== */
@@ -438,6 +437,30 @@ box-shadow:
 0 4px 15px rgba(212,175,55,.35);
 
 }
+/* =====================================
+MENU AKTIF MOBILE
+===================================== */
+
+.mobile-menu a.active{
+
+background:
+linear-gradient(
+135deg,
+#d4af37,
+#f7d774
+);
+
+color:#1f6b4f;
+
+font-weight:700;
+
+border-radius:12px;
+
+box-shadow:
+0 4px 15px rgba(212,175,55,.35);
+
+}
+/*===================================== */
 
 header.scrolled .nav-menu a{
 color:white;
