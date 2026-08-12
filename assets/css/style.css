@@ -642,6 +642,38 @@ transparent,
 #d4af37,
 transparent
 );
+animation:
+goldGlow 3s ease-in-out infinite;
+}
+@keyframes goldGlow{
+
+0%{
+
+opacity:.7;
+
+box-shadow:
+0 0 8px rgba(212,175,55,.2);
+
+}
+
+50%{
+
+opacity:1;
+
+box-shadow:
+0 0 20px rgba(212,175,55,.5);
+
+}
+
+100%{
+
+opacity:.7;
+
+box-shadow:
+0 0 8px rgba(212,175,55,.2);
+
+}
+
 }
 
 .hero-buttons{
