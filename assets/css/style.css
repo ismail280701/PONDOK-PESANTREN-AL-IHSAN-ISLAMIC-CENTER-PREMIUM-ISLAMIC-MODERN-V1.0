@@ -1073,7 +1073,7 @@ transform:translateY(-3px);
 }
 
 .full-text{
-display:block;
+display:block !important;
 }
 /* =====================================
 TOMBOL KATA PENGANTAR HOME
@@ -1115,6 +1115,8 @@ transform:translateY(-3px);
 .welcome-readmore-btn{
 
 padding:12px 22px;
+
+display:none;
 
 border:none;
 
@@ -4273,6 +4275,18 @@ justify-content:center;
 
 .welcome-buttons img{
 width:160px;
+}
+
+.welcome-readmore-btn{
+
+display:inline-flex;
+
+}
+
+.full-text{
+
+display:none;
+
 }
 
 /* ===== KEUNGGULAN PONDOK ===== */
