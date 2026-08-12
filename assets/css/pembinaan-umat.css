@@ -1,1 +1,41 @@
 
+/* =========================================
+KATA PENGANTAR KAJIAN HP
+========================================= */
+
+.kajian-float-image{
+
+float:none;
+
+width:100%;
+
+max-width:100%;
+
+margin:0 0 20px;
+
+display:block;
+
+}
+
+.kajian-text{
+
+max-height:220px;
+
+overflow:hidden;
+
+transition:
+max-height .5s ease;
+
+}
+
+.kajian-text.active{
+
+max-height:2000px;
+
+}
+
+.kajian-readmore-btn{
+
+display:inline-flex;
+
+}
