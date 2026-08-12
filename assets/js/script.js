@@ -210,15 +210,22 @@ function toggleWelcome(){
 const fullText =
 document.querySelector('.full-text');
 
-const button =
-document.querySelector('.read-more-btn');
+const btnText =
+document.getElementById("welcomeBtnText");
 
-if(fullText.style.display === "block"){
+const arrow =
+document.getElementById("welcomeArrow");
+
+if(
+fullText.style.display === "block"
+){
 
 fullText.style.display = "none";
 
-button.innerHTML =
+btnText.textContent =
 "Baca Selengkapnya";
+
+arrow.classList.remove("rotate");
 
 window.scrollTo({
 
@@ -234,8 +241,10 @@ behavior:"smooth"
 
 fullText.style.display = "block";
 
-button.innerHTML =
+btnText.textContent =
 "Tutup";
+
+arrow.classList.add("rotate");
 
 }
 
