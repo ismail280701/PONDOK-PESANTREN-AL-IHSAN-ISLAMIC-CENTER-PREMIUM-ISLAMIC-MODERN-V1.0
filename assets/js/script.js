@@ -663,3 +663,43 @@ lokasiBtn.querySelector(
 });
 
 }
+/* =====================================
+KATA PENGANTAR KAJIAN
+===================================== */
+
+const kajianBtn =
+document.getElementById(
+"kajianReadMoreBtn"
+);
+
+const kajianText =
+document.getElementById(
+"kajianText"
+);
+
+const kajianArrow =
+document.getElementById(
+"kajianArrow"
+);
+
+if(
+kajianBtn &&
+kajianText &&
+kajianArrow
+){
+
+kajianBtn.addEventListener(
+"click",
+function(){
+
+kajianText.classList.toggle(
+"active"
+);
+
+kajianArrow.classList.toggle(
+"rotate"
+);
+
+});
+
+}
