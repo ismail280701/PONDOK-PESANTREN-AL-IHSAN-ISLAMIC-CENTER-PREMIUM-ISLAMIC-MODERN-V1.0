@@ -4258,6 +4258,17 @@ display:block;
 
 .welcome-buttons{
 justify-content:center;
+flex-direction:column;
+}
+
+.welcome-btn,
+.welcome-readmore-btn{
+
+width:100%;
+max-width:320px;
+
+justify-content:center;
+
 }
 
 .welcome-buttons img{
