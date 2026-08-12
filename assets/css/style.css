@@ -1035,7 +1035,8 @@ line-height:1.9;
 
 .welcome-buttons{
 display:flex;
-gap:15px;
+justify-content:center;
+gap:12px;
 align-items:center;
 margin-top:25px;
 flex-wrap:wrap;
@@ -1073,6 +1074,92 @@ transform:translateY(-3px);
 
 .full-text{
 display:block;
+}
+/* =====================================
+TOMBOL KATA PENGANTAR HOME
+===================================== */
+
+.welcome-btn{
+
+padding:12px 22px;
+
+border-radius:999px;
+
+background:
+linear-gradient(
+135deg,
+#1f6b4f,
+#2e8b68
+);
+
+color:white;
+
+font-weight:600;
+
+transition:.3s ease;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.welcome-btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+.welcome-readmore-btn{
+
+padding:12px 22px;
+
+border:none;
+
+border-radius:999px;
+
+background:
+linear-gradient(
+135deg,
+#d4af37,
+#f7d774
+);
+
+color:#222;
+
+font-weight:700;
+
+cursor:pointer;
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+transition:.3s ease;
+
+}
+
+.welcome-readmore-btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+.welcome-arrow{
+
+transition:
+transform .35s ease;
+
+}
+
+.welcome-arrow.rotate{
+
+transform:rotate(180deg);
+
 }
 
 /* =====================================
