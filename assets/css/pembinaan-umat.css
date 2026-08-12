@@ -1,3 +1,139 @@
+/* =========================================
+KATA PENGANTAR KAJIAN
+========================================= */
+
+.kajian-intro-section{
+
+padding:90px 0;
+
+}
+
+.kajian-intro-section h2{
+
+color:#1f6b4f;
+
+}
+
+/* ARTIKEL */
+
+.kajian-article{
+
+line-height:1.9;
+
+color:#666;
+
+}
+
+/* FOTO */
+
+.kajian-float-image{
+
+float:left;
+
+width:420px;
+
+max-width:45%;
+
+margin:
+0 35px 20px 0;
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.12);
+
+transition:.5s ease;
+
+}
+
+.kajian-float-image:hover{
+
+transform:scale(1.02);
+
+}
+
+.kajian-text p{
+
+margin-bottom:18px;
+
+text-align:justify;
+
+}
+
+/* TOMBOL */
+
+.kajian-readmore-btn{
+
+display:none;
+
+margin-top:25px;
+
+padding:12px 24px;
+
+border:none;
+
+border-radius:999px;
+
+background:
+linear-gradient(
+135deg,
+#d4af37,
+#f4d06f
+);
+
+color:#222;
+
+font-weight:700;
+
+cursor:pointer;
+
+align-items:center;
+
+gap:10px;
+
+transition:.3s ease;
+
+}
+
+.kajian-readmore-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 10px 20px rgba(212,175,55,.35);
+
+}
+
+/* PANAH */
+
+.kajian-arrow{
+
+display:inline-block;
+
+transition:
+transform .35s ease;
+
+}
+
+.kajian-arrow.rotate{
+
+transform:rotate(180deg);
+
+}
+
+/* CLEAR FLOAT */
+
+.kajian-article::after{
+
+content:"";
+
+display:block;
+
+clear:both;
+
+}
 @media(max-width:768px){
 /* =========================================
 KATA PENGANTAR KAJIAN HP
