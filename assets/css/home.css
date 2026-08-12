@@ -1,1 +1,181 @@
+/* =====================================
+PROGRAM UNGGULAN PESANTREN
+===================================== */
 
+.program-section{
+
+padding:90px 0;
+
+}
+
+.program-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:20px;
+
+margin-top:40px;
+
+}
+
+.program-card{
+
+background:white;
+
+padding:25px 15px;
+
+border-radius:24px;
+
+text-align:center;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s ease;
+
+color:inherit;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.program-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:4px;
+
+background:
+linear-gradient(
+90deg,
+#d4af37,
+#f7d774,
+#d4af37
+);
+
+}
+
+.program-card:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.program-icon{
+
+width:70px;
+
+height:70px;
+
+margin:0 auto 15px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:2.2rem;
+
+border-radius:50%;
+
+background:
+linear-gradient(
+135deg,
+rgba(31,107,79,.08),
+rgba(212,175,55,.12)
+);
+
+}
+
+.program-card h3{
+
+color:#1f6b4f;
+
+font-size:1.1rem;
+
+margin-bottom:8px;
+
+font-weight:700;
+
+}
+
+.program-card p{
+
+font-size:.85rem;
+
+line-height:1.5;
+
+color:#666;
+
+}
+/* =====================================
+PROGRAM UNGGULAN HP
+===================================== */
+
+@media(max-width:768px){
+
+.program-grid{
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:10px;
+
+}
+
+.program-card{
+
+padding:15px 8px;
+
+border-radius:18px;
+
+}
+
+.program-icon{
+
+width:50px;
+
+height:50px;
+
+font-size:1.5rem;
+
+margin-bottom:8px;
+
+}
+
+.program-card h3{
+
+font-size:.75rem;
+
+line-height:1.2;
+
+margin-bottom:5px;
+
+}
+
+.program-card p{
+
+font-size:.62rem;
+
+line-height:1.3;
+
+}
+
+}
