@@ -613,6 +613,74 @@ flex-direction:column;
 align-items:center;
 }
 
+/* =====================================
+HERO BADGE
+===================================== */
+
+.hero-badge{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:10px 18px;
+
+margin-bottom:20px;
+
+border-radius:999px;
+
+background:
+rgba(255,255,255,.12);
+
+backdrop-filter:blur(12px);
+
+-webkit-backdrop-filter:blur(12px);
+
+border:
+1px solid rgba(255,255,255,.20);
+
+color:#f7d774;
+
+font-size:.85rem;
+
+font-weight:600;
+
+letter-spacing:.4px;
+
+box-shadow:
+0 8px 25px rgba(0,0,0,.15);
+
+animation:
+badgeGlow 4s ease-in-out infinite;
+
+}
+@keyframes badgeGlow{
+
+0%{
+
+box-shadow:
+0 8px 20px rgba(0,0,0,.15);
+
+}
+
+50%{
+
+box-shadow:
+0 8px 25px rgba(212,175,55,.30);
+
+}
+
+100%{
+
+box-shadow:
+0 8px 20px rgba(0,0,0,.15);
+
+}
+
+}
+
 .hero h1{
 font-size:clamp(2rem,5vw,4rem);
 font-weight:800;
@@ -4014,6 +4082,18 @@ padding:95px 20px 60px;
 
 .hero-content{
 transform:none !important;
+}
+/* =====================================
+HERO BADGE
+===================================== */
+.hero-badge{
+
+font-size:.75rem;
+
+padding:8px 14px;
+
+margin-bottom:15px;
+
 }
 
 .hero h1{
