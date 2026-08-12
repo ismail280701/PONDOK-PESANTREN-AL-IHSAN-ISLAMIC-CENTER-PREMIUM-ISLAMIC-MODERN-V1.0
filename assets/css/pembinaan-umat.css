@@ -336,6 +336,186 @@ transition:.4s ease;
 transform:scale(1.04);
 
 }
+/* =========================================
+DETAIL PROGRAM KAJIAN
+========================================= */
+
+.kajian-detail-section{
+
+padding:80px 0;
+
+}
+
+.kajian-detail-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:30px;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.kajian-detail-header{
+
+display:grid;
+
+grid-template-columns:
+320px 1fr;
+
+gap:30px;
+
+align-items:center;
+
+margin-bottom:30px;
+
+}
+
+.kajian-detail-header img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+border-radius:24px;
+
+}
+
+.kajian-detail-intro h2{
+
+margin-top:10px;
+
+color:#1f6b4f;
+
+}
+
+.kajian-detail-intro p{
+
+line-height:1.8;
+
+}
+
+.kajian-info-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:15px;
+
+margin-bottom:30px;
+
+}
+
+.kajian-info-item{
+
+background:#f8f8f8;
+
+padding:18px;
+
+border-radius:18px;
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.kajian-info-item:hover{
+
+transform:translateY(-3px);
+
+}
+
+.kajian-info-item h3{
+
+color:#1f6b4f;
+
+margin-bottom:8px;
+
+font-size:1rem;
+
+}
+
+.kajian-detail-content p{
+
+line-height:1.9;
+
+text-align:justify;
+
+}
+
+.kajian-action-buttons{
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:25px;
+
+}
+
+.btn-wa{
+
+padding:12px 24px;
+
+border-radius:999px;
+
+background:
+linear-gradient(
+135deg,
+#1f6b4f,
+#2e8b68
+);
+
+color:white;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.btn-wa:hover{
+
+transform:translateY(-3px);
+
+}
+
+.btn-lokasi{
+
+padding:12px 24px;
+
+border-radius:999px;
+
+background:
+linear-gradient(
+135deg,
+#d4af37,
+#f7d774
+);
+
+color:#222;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.btn-lokasi:hover{
+
+transform:translateY(-3px);
+
+}
 @media(max-width:768px){
 /* =========================================
 KATA PENGANTAR KAJIAN HP
@@ -415,6 +595,48 @@ grid-column:1 / span 2;
 max-width:220px;
 
 margin:auto;
+
+}
+/* =========================================
+DETAIL PROGRAM KAJIAN HP
+========================================= */
+.kajian-detail-header{
+
+grid-template-columns:1fr;
+
+}
+
+.kajian-detail-header img{
+
+height:220px;
+
+}
+
+.kajian-info-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+.kajian-action-buttons{
+
+flex-direction:column;
+
+}
+
+.btn-wa,
+.btn-lokasi{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.kajian-detail-card{
+
+padding:20px;
 
 }
 }
