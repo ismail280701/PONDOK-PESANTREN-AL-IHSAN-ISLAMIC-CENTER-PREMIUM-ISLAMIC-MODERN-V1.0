@@ -1,5 +1,3 @@
-
-
 /* =====================================
    LOADING SCREEN
 ===================================== */
@@ -699,6 +697,25 @@ kajianText.classList.toggle(
 kajianArrow.classList.toggle(
 "rotate"
 );
+
+if(
+kajianText.classList.contains(
+"active"
+)
+){
+
+kajianBtn.querySelector(
+"span"
+).textContent = "Tutup";
+
+}else{
+
+kajianBtn.querySelector(
+"span"
+).textContent =
+"Baca Selengkapnya";
+
+}
 
 });
 
