@@ -1,4 +1,4 @@
-
+@media(max-width:768px){
 /* =========================================
 KATA PENGANTAR KAJIAN HP
 ========================================= */
@@ -38,4 +38,5 @@ max-height:2000px;
 
 display:inline-flex;
 
+}
 }
