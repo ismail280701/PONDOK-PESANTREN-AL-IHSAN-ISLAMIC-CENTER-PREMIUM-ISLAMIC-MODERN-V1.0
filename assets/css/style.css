@@ -483,6 +483,9 @@ rgba(255,255,255,.12);
 backdrop-filter:blur(6px);
 transform:translateY(-2px);
 }
+.welcome-readmore-btn{
+display:none !important;
+}
 
 /* =====================================
 MOBILE MENU
@@ -4709,6 +4712,10 @@ text-align:center;
 
 justify-content:center;
 
+}
+
+.welcome-readmore-btn{
+display:inline-flex !important;
 }
 /* =========================================
 PROGRAM UNGGULAN HP
