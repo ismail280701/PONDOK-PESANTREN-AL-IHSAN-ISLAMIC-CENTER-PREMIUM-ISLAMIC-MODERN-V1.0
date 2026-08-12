@@ -1074,10 +1074,6 @@ transition:.3s;
 .read-more-btn:hover{
 transform:translateY(-3px);
 }
-
-.full-text{
-display:block !important;
-}
 /* =====================================
 TOMBOL KATA PENGANTAR HOME
 ===================================== */
