@@ -476,6 +476,73 @@ document
 observer.observe(el);
 
 });
+/* =====================================
+ACCORDION EKSTRAKURIKULER
+===================================== */
+
+document
+.querySelectorAll(
+'.ekstrakurikuler-accordion-btn'
+)
+.forEach(button => {
+
+button.addEventListener(
+'click',
+() => {
+
+const content =
+button.nextElementSibling;
+
+const isOpen =
+button.classList.contains(
+'active'
+);
+
+document
+.querySelectorAll(
+'.ekstrakurikuler-accordion-btn'
+)
+.forEach(btn => {
+
+btn.classList.remove(
+'active'
+);
+
+});
+
+document
+.querySelectorAll(
+'.ekstrakurikuler-accordion-content'
+)
+.forEach(item => {
+
+item.style.maxHeight =
+null;
+
+item.classList.remove(
+'show'
+);
+
+});
+
+if(!isOpen){
+
+button.classList.add(
+'active'
+);
+
+content.style.maxHeight =
+content.scrollHeight + 'px';
+
+content.classList.add(
+'show'
+);
+
+}
+
+});
+
+});
 /* =========================================
 KATA PENGANTAR EKSTRAKURIKULER
 ========================================= */
