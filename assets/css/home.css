@@ -158,6 +158,49 @@ transform:translateY(-2px);
 
 }
 /* =====================================
+TOMBOL DETAIL PROGRAM
+===================================== */
+
+.detail-program-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+margin-top:15px;
+
+padding:10px 18px;
+
+border-radius:999px;
+
+background:
+linear-gradient(
+135deg,
+#1f6b4f,
+#2e8b68
+);
+
+color:white;
+
+font-size:.85rem;
+
+font-weight:600;
+
+transition:.3s ease;
+
+}
+
+.detail-program-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 8px 20px rgba(31,107,79,.25);
+
+}
+/* =====================================
 PROGRAM UNGGULAN HP
 ===================================== */
 
