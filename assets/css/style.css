@@ -514,20 +514,16 @@ backdrop-filter:blur(18px);
 -webkit-backdrop-filter:blur(18px);
 box-shadow:var(--shadow-lg);
 z-index:9999;
-padding:80px 24px 30px;
+padding:15px 20px 20px;
 transition:.4s;
 }
 .mobile-menu-header{
-
 display:flex;
-
 align-items:center;
-
 gap:14px;
-
 padding:14px 16px;
 background:rgba(255,255,255,.06);
-margin-bottom:16px;
+margin-bottom:10px;
 border-radius:20px;
 padding-bottom:18px;
 border:1px solid rgba(255,255,255,.1);
