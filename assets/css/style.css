@@ -546,7 +546,7 @@ margin:0;
 margin-bottom:4px;
 font-size:1rem;
 font-weight:700;
-color:#fff;
+color: #dfe8df;
 line-height:1.2;
 }
 
@@ -568,7 +568,7 @@ left:0;
 display:block;
 padding:16px 0;
 margin-bottom:4px;
-color:rgba(255,255,255,.92);
+color:#1f3d32;
 font-weight:600;
 border-bottom:1px solid rgba(255,255,255,.12);;
 display:flex;
