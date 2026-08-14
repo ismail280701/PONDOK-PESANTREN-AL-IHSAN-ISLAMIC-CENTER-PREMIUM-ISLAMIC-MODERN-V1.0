@@ -579,7 +579,53 @@ text-align:left;
 white-space:nowrap;
 font-size:14px;
 }
+/* =====================================
+NAVBAR
+===================================== */
 
+.navbar{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 5%;
+
+background:
+rgba(15,77,57,.15);
+
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+
+transition:
+all .35s ease;
+
+z-index:999;
+
+animation:
+navbarFade .6s ease;
+
+}
+
+/* =====================================
+NAVBAR SAAT SCROLL
+===================================== */
+
+.navbar.scrolled{
+
+background:
+#0f4d39;
+
+box-shadow:
+0 8px 25px rgba(0,0,0,.15);
+
+}
 /* =====================================
 HERO SECTION
 ===================================== */
