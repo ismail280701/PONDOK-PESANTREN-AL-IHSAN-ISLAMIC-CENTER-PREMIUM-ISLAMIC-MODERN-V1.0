@@ -508,8 +508,7 @@ top:0;
 left:-300px;
 width:280px;
 height:100vh;
-background:
-rgba(15,77,57,.96);
+background: #0b1f1a;
 backdrop-filter:blur(18px);
 -webkit-backdrop-filter:blur(18px);
 box-shadow:var(--shadow-lg);
