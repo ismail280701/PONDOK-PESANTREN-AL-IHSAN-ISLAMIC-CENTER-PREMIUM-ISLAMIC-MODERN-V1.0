@@ -1,17 +1,22 @@
 /* =====================================
-   LOADING SCREEN
+   LOADING SCREEN - OPTIMIZED
 ===================================== */
 
-window.addEventListener("load", function () {
+function hidePageLoader() {
     const loader = document.getElementById("loader");
 
-    setTimeout(() => {
-        if(loader){
-            loader.classList.add("loader-hide");
-        }
-    }, 1000);
-});
+    if (!loader) return;
 
+    setTimeout(() => {
+        loader.classList.add("loader-hide");
+    }, 500);
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", hidePageLoader);
+} else {
+    hidePageLoader();
+}
 
 /* =====================================
    MOBILE MENU
