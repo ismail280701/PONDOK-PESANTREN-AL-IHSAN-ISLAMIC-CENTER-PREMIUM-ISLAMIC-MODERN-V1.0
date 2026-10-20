@@ -438,3 +438,182 @@ repeat(2,1fr);
 }
 
 }
+/* =========================================
+GALERI FOTO & VIDEO - AL IHSAN
+========================================= */
+
+/* Kartu video */
+
+.gallery-video {
+    position: relative;
+    background: #123d2d;
+}
+
+/* Thumbnail video */
+
+.gallery-video > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tombol play */
+
+.gallery-video-play {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.92);
+    color: #1f6b4f;
+
+    font-size: 25px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.25);
+
+    z-index: 2;
+    pointer-events: none;
+
+    transition: .3s ease;
+}
+
+.gallery-video:hover .gallery-video-play {
+    transform: translate(-50%, -50%) scale(1.12);
+    background: #d4af37;
+    color: #fff;
+}
+
+/* =========================================
+LIGHTBOX POPUP
+========================================= */
+
+.gallery-lightbox {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,.92);
+
+    z-index: 99999;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.gallery-lightbox.active {
+    display: flex;
+}
+
+/* Konten popup */
+
+.gallery-lightbox-content {
+    width: 100%;
+    max-width: 950px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Foto popup */
+
+.gallery-lightbox-content img {
+    display: block;
+    max-width: 100%;
+    max-height: 85dvh;
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+/* Video popup */
+
+.gallery-lightbox-content video {
+    display: block;
+
+    width: auto;
+    max-width: 100%;
+    max-height: 85dvh;
+
+    aspect-ratio: 9 / 16;
+
+    border-radius: 14px;
+    background: #000;
+}
+
+/* Tombol tutup */
+
+.gallery-lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 46px;
+    height: 46px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.15);
+    color: #fff;
+
+    font-size: 32px;
+
+    cursor: pointer;
+    z-index: 2;
+
+    transition: .3s;
+}
+
+.gallery-lightbox-close:hover {
+    background: #d4af37;
+    color: #222;
+}
+
+/* Mencegah scroll belakang */
+
+body.gallery-popup-open {
+    overflow: hidden;
+}
+
+/* =========================================
+RESPONSIVE HP
+========================================= */
+
+@media(max-width:768px) {
+
+    .gallery-video-play {
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+    }
+
+    .gallery-lightbox {
+        padding: 15px;
+    }
+
+    .gallery-lightbox-close {
+        top: 15px;
+        right: 15px;
+    }
+
+    .gallery-lightbox-content video {
+        max-height: 78dvh;
+    }
+
+}
