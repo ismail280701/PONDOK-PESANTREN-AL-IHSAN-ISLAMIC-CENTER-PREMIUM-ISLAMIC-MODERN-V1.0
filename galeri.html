@@ -1160,6 +1160,34 @@ class="section gallery-section">
         </div>
 
     </div>
+
+    <!-- =====================================
+VIDEO KEGIATAN PESANTREN
+===================================== -->
+
+<div class="gallery-item gallery-video"
+     data-category="kebersamaan"
+     data-video="assets/images/galeri/Kebersamaan/Videos"
+     tabindex="0"
+     role="button"
+     aria-label="Putar video kegiatan santri">
+
+    <img
+        loading="lazy"
+        src="assets/images/galeri/Kebersamaan/Santri Adventure.webp"
+        alt="Thumbnail video kegiatan santri">
+
+    <div class="gallery-video-play">
+        ▶
+    </div>
+
+    <div class="gallery-overlay">
+        <span>Video Kegiatan</span>
+        <h3>Kegiatan Santri Al-Ihsan</h3>
+    </div>
+
+</div>
+    
         <div class="gallery-item" data-category="kebersamaan">
 
         <img
@@ -1551,6 +1579,30 @@ onclick="closeMenu()">
 id="waOverlay"
 class="wa-overlay"
 onclick="closeWA()">
+</div>
+<!-- =====================================
+POPUP FOTO & VIDEO GALERI
+===================================== -->
+
+<div class="gallery-lightbox"
+     id="galleryLightbox"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Pratinjau galeri"
+     aria-hidden="true">
+
+    <button
+        class="gallery-lightbox-close"
+        id="galleryLightboxClose"
+        type="button"
+        aria-label="Tutup galeri">
+        &times;
+    </button>
+
+    <div class="gallery-lightbox-content"
+         id="galleryLightboxContent">
+    </div>
+
 </div>
 </body>
 </html>
