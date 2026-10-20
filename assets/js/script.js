@@ -848,3 +848,173 @@ kajianBtn.querySelector(
 });
 
 }
+/* =========================================
+GALERI LIGHTBOX FOTO & VIDEO
+PONDOK PESANTREN AL-IHSAN
+========================================= */
+
+(function () {
+
+    const lightbox =
+        document.getElementById("galleryLightbox");
+
+    const content =
+        document.getElementById("galleryLightboxContent");
+
+    const closeButton =
+        document.getElementById("galleryLightboxClose");
+
+    if (!lightbox || !content || !closeButton) return;
+
+    let lastFocusedElement = null;
+
+    /* BUKA POPUP */
+
+    function openGallery(item) {
+
+        const videoSrc = item.dataset.video;
+        const image = item.querySelector("img");
+
+        if (!videoSrc && !image) return;
+
+        lastFocusedElement = document.activeElement;
+
+        content.replaceChildren();
+
+        if (videoSrc) {
+
+            const video = document.createElement("video");
+
+            video.src = videoSrc;
+            video.controls = true;
+            video.playsInline = true;
+            video.preload = "metadata";
+
+            content.appendChild(video);
+
+            video.play().catch(() => {});
+
+        } else {
+
+            const popupImage = document.createElement("img");
+
+            popupImage.src = image.currentSrc || image.src;
+            popupImage.alt = image.alt || "Foto kegiatan pesantren";
+
+            content.appendChild(popupImage);
+
+        }
+
+        lightbox.classList.add("active");
+        lightbox.setAttribute("aria-hidden", "false");
+
+        document.body.classList.add("gallery-popup-open");
+
+        closeButton.focus();
+
+    }
+
+    /* TUTUP POPUP */
+
+    function closeGallery() {
+
+        const video = content.querySelector("video");
+
+        if (video) {
+            video.pause();
+            video.removeAttribute("src");
+            video.load();
+        }
+
+        content.replaceChildren();
+
+        lightbox.classList.remove("active");
+        lightbox.setAttribute("aria-hidden", "true");
+
+        document.body.classList.remove("gallery-popup-open");
+
+        if (lastFocusedElement) {
+            lastFocusedElement.focus();
+        }
+
+    }
+
+    /* KLIK FOTO ATAU VIDEO */
+
+    document.querySelectorAll(".gallery-item").forEach(item => {
+
+        item.setAttribute("tabindex", "0");
+
+        if (!item.hasAttribute("role")) {
+            item.setAttribute("role", "button");
+        }
+
+        item.addEventListener("click", () => {
+            openGallery(item);
+        });
+
+        item.addEventListener("keydown", event => {
+
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                openGallery(item);
+            }
+
+        });
+
+    });
+
+    /* TOMBOL TUTUP */
+
+    closeButton.addEventListener("click", closeGallery);
+
+    /* KLIK BACKDROP */
+
+    lightbox.addEventListener("click", event => {
+
+        if (event.target === lightbox) {
+            closeGallery();
+        }
+
+    });
+
+    /* TOMBOL ESCAPE */
+
+    document.addEventListener("keydown", event => {
+
+        if (!lightbox.classList.contains("active")) return;
+
+        if (event.key === "Escape") {
+            closeGallery();
+        }
+
+        if (event.key === "Tab") {
+            const focusable = Array.from(
+                lightbox.querySelectorAll(
+                    'button, video[controls]'
+                )
+            ).filter(el => !el.disabled);
+
+            if (!focusable.length) {
+                event.preventDefault();
+                return;
+            }
+
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (
+                !event.shiftKey &&
+                document.activeElement === last
+            ) {
+                event.preventDefault();
+                first.focus();
+            }
+        }
+
+    });
+
+})();
